@@ -1,0 +1,4 @@
+[submodule "LeechBlockNG"]
+	path = LeechBlockNG
+	url = https://github.com/incuvolve/LeechBlockNG/
+	branch = integration
