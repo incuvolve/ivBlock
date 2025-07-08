@@ -31,8 +31,6 @@
 		867FBBEF2E1B31640090CAFD /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FBBAD2E1B31630090CAFD /* SafariWebExtensionHandler.swift */; };
 		867FBC2B2E1B31640090CAFD /* delayed.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC012E1B31640090CAFD /* delayed.html */; };
 		867FBC2C2E1B31640090CAFD /* diagnostics.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC022E1B31640090CAFD /* diagnostics.js */; };
-		867FBC2D2E1B31640090CAFD /* vi in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC032E1B31640090CAFD /* vi */; };
-		867FBC2E2E1B31640090CAFD /* he in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC042E1B31640090CAFD /* he */; };
 		867FBC2F2E1B31640090CAFD /* stats.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC052E1B31640090CAFD /* stats.html */; };
 		867FBC302E1B31640090CAFD /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC062E1B31640090CAFD /* popup.js */; };
 		867FBC312E1B31640090CAFD /* add-sites.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC072E1B31640090CAFD /* add-sites.js */; };
@@ -42,9 +40,7 @@
 		867FBC352E1B31640090CAFD /* images in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0B2E1B31640090CAFD /* images */; };
 		867FBC362E1B31640090CAFD /* lockdown.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0C2E1B31640090CAFD /* lockdown.html */; };
 		867FBC372E1B31640090CAFD /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0D2E1B31640090CAFD /* popup.html */; };
-		867FBC382E1B31640090CAFD /* pt_BR in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0E2E1B31640090CAFD /* pt_BR */; };
 		867FBC392E1B31640090CAFD /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0F2E1B31640090CAFD /* options.js */; };
-		867FBC3A2E1B31640090CAFD /* it in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC102E1B31640090CAFD /* it */; };
 		867FBC3B2E1B31640090CAFD /* blocked.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC112E1B31640090CAFD /* blocked.js */; };
 		867FBC3C2E1B31640090CAFD /* VERSIONS.md in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC122E1B31640090CAFD /* VERSIONS.md */; };
 		867FBC3D2E1B31640090CAFD /* add-sites.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC132E1B31640090CAFD /* add-sites.html */; };
@@ -62,7 +58,6 @@
 		867FBC492E1B31640090CAFD /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1F2E1B31640090CAFD /* popup.css */; };
 		867FBC4A2E1B31640090CAFD /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC202E1B31640090CAFD /* _locales */; };
 		867FBC4B2E1B31640090CAFD /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC212E1B31640090CAFD /* content.js */; };
-		867FBC4C2E1B31640090CAFD /* es in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC222E1B31640090CAFD /* es */; };
 		867FBC4D2E1B31640090CAFD /* fonts.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC232E1B31640090CAFD /* fonts.css */; };
 		867FBC4E2E1B31640090CAFD /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC242E1B31640090CAFD /* fonts */; };
 		867FBC4F2E1B31640090CAFD /* blocked.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC252E1B31640090CAFD /* blocked.html */; };
@@ -73,8 +68,6 @@
 		867FBC542E1B31640090CAFD /* password.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC2A2E1B31640090CAFD /* password.html */; };
 		867FBC552E1B31640090CAFD /* delayed.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC012E1B31640090CAFD /* delayed.html */; };
 		867FBC562E1B31640090CAFD /* diagnostics.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC022E1B31640090CAFD /* diagnostics.js */; };
-		867FBC572E1B31640090CAFD /* vi in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC032E1B31640090CAFD /* vi */; };
-		867FBC582E1B31640090CAFD /* he in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC042E1B31640090CAFD /* he */; };
 		867FBC592E1B31640090CAFD /* stats.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC052E1B31640090CAFD /* stats.html */; };
 		867FBC5A2E1B31640090CAFD /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC062E1B31640090CAFD /* popup.js */; };
 		867FBC5B2E1B31640090CAFD /* add-sites.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC072E1B31640090CAFD /* add-sites.js */; };
@@ -84,9 +77,7 @@
 		867FBC5F2E1B31640090CAFD /* images in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0B2E1B31640090CAFD /* images */; };
 		867FBC602E1B31640090CAFD /* lockdown.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0C2E1B31640090CAFD /* lockdown.html */; };
 		867FBC612E1B31640090CAFD /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0D2E1B31640090CAFD /* popup.html */; };
-		867FBC622E1B31640090CAFD /* pt_BR in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0E2E1B31640090CAFD /* pt_BR */; };
 		867FBC632E1B31640090CAFD /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC0F2E1B31640090CAFD /* options.js */; };
-		867FBC642E1B31640090CAFD /* it in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC102E1B31640090CAFD /* it */; };
 		867FBC652E1B31640090CAFD /* blocked.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC112E1B31640090CAFD /* blocked.js */; };
 		867FBC662E1B31640090CAFD /* VERSIONS.md in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC122E1B31640090CAFD /* VERSIONS.md */; };
 		867FBC672E1B31640090CAFD /* add-sites.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC132E1B31640090CAFD /* add-sites.html */; };
@@ -104,7 +95,6 @@
 		867FBC732E1B31640090CAFD /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1F2E1B31640090CAFD /* popup.css */; };
 		867FBC742E1B31640090CAFD /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC202E1B31640090CAFD /* _locales */; };
 		867FBC752E1B31640090CAFD /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC212E1B31640090CAFD /* content.js */; };
-		867FBC762E1B31640090CAFD /* es in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC222E1B31640090CAFD /* es */; };
 		867FBC772E1B31640090CAFD /* fonts.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC232E1B31640090CAFD /* fonts.css */; };
 		867FBC782E1B31640090CAFD /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC242E1B31640090CAFD /* fonts */; };
 		867FBC792E1B31640090CAFD /* blocked.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC252E1B31640090CAFD /* blocked.html */; };
@@ -183,8 +173,6 @@
 		867FBBE12E1B31640090CAFD /* ivBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ivBlock.entitlements; sourceTree = "<group>"; };
 		867FBC012E1B31640090CAFD /* delayed.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = delayed.html; path = ../../LeechBlockNG/delayed.html; sourceTree = "<group>"; };
 		867FBC022E1B31640090CAFD /* diagnostics.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = diagnostics.js; path = ../../LeechBlockNG/diagnostics.js; sourceTree = "<group>"; };
-		867FBC032E1B31640090CAFD /* vi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vi; path = ../../LeechBlockNG/vi; sourceTree = "<group>"; };
-		867FBC042E1B31640090CAFD /* he */ = {isa = PBXFileReference; lastKnownFileType = folder; name = he; path = ../../LeechBlockNG/he; sourceTree = "<group>"; };
 		867FBC052E1B31640090CAFD /* stats.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = stats.html; path = ../../LeechBlockNG/stats.html; sourceTree = "<group>"; };
 		867FBC062E1B31640090CAFD /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../LeechBlockNG/popup.js; sourceTree = "<group>"; };
 		867FBC072E1B31640090CAFD /* add-sites.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "add-sites.js"; path = "../../LeechBlockNG/add-sites.js"; sourceTree = "<group>"; };
@@ -194,9 +182,7 @@
 		867FBC0B2E1B31640090CAFD /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../LeechBlockNG/images; sourceTree = "<group>"; };
 		867FBC0C2E1B31640090CAFD /* lockdown.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = lockdown.html; path = ../../LeechBlockNG/lockdown.html; sourceTree = "<group>"; };
 		867FBC0D2E1B31640090CAFD /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../LeechBlockNG/popup.html; sourceTree = "<group>"; };
-		867FBC0E2E1B31640090CAFD /* pt_BR */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pt_BR; path = ../../LeechBlockNG/pt_BR; sourceTree = "<group>"; };
 		867FBC0F2E1B31640090CAFD /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = ../../LeechBlockNG/options.js; sourceTree = "<group>"; };
-		867FBC102E1B31640090CAFD /* it */ = {isa = PBXFileReference; lastKnownFileType = folder; name = it; path = ../../LeechBlockNG/it; sourceTree = "<group>"; };
 		867FBC112E1B31640090CAFD /* blocked.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = blocked.js; path = ../../LeechBlockNG/blocked.js; sourceTree = "<group>"; };
 		867FBC122E1B31640090CAFD /* VERSIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = VERSIONS.md; path = ../../LeechBlockNG/VERSIONS.md; sourceTree = "<group>"; };
 		867FBC132E1B31640090CAFD /* add-sites.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "add-sites.html"; path = "../../LeechBlockNG/add-sites.html"; sourceTree = "<group>"; };
@@ -214,7 +200,6 @@
 		867FBC1F2E1B31640090CAFD /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../LeechBlockNG/popup.css; sourceTree = "<group>"; };
 		867FBC202E1B31640090CAFD /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../LeechBlockNG/_locales; sourceTree = "<group>"; };
 		867FBC212E1B31640090CAFD /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../LeechBlockNG/content.js; sourceTree = "<group>"; };
-		867FBC222E1B31640090CAFD /* es */ = {isa = PBXFileReference; lastKnownFileType = folder; name = es; path = ../../LeechBlockNG/es; sourceTree = "<group>"; };
 		867FBC232E1B31640090CAFD /* fonts.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = fonts.css; path = ../../LeechBlockNG/fonts.css; sourceTree = "<group>"; };
 		867FBC242E1B31640090CAFD /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../LeechBlockNG/fonts; sourceTree = "<group>"; };
 		867FBC252E1B31640090CAFD /* blocked.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = blocked.html; path = ../../LeechBlockNG/blocked.html; sourceTree = "<group>"; };
@@ -367,13 +352,10 @@
 				867FBC012E1B31640090CAFD /* delayed.html */,
 				867FBC162E1B31640090CAFD /* diagnostics.html */,
 				867FBC022E1B31640090CAFD /* diagnostics.js */,
-				867FBC222E1B31640090CAFD /* es */,
 				867FBC242E1B31640090CAFD /* fonts */,
 				867FBC232E1B31640090CAFD /* fonts.css */,
-				867FBC042E1B31640090CAFD /* he */,
 				867FBC182E1B31640090CAFD /* icons */,
 				867FBC0B2E1B31640090CAFD /* images */,
-				867FBC102E1B31640090CAFD /* it */,
 				867FBC292E1B31640090CAFD /* jquery-ui */,
 				867FBC092E1B31640090CAFD /* LICENSE */,
 				867FBC0C2E1B31640090CAFD /* lockdown.html */,
@@ -388,14 +370,12 @@
 				867FBC1F2E1B31640090CAFD /* popup.css */,
 				867FBC0D2E1B31640090CAFD /* popup.html */,
 				867FBC062E1B31640090CAFD /* popup.js */,
-				867FBC0E2E1B31640090CAFD /* pt_BR */,
 				867FBC142E1B31640090CAFD /* README.md */,
 				867FBC052E1B31640090CAFD /* stats.html */,
 				867FBC282E1B31640090CAFD /* stats.js */,
 				867FBC192E1B31640090CAFD /* style.css */,
 				867FBC262E1B31640090CAFD /* themes */,
 				867FBC122E1B31640090CAFD /* VERSIONS.md */,
-				867FBC032E1B31640090CAFD /* vi */,
 			);
 			name = Resources;
 			path = "Shared (Extension)";
@@ -574,25 +554,20 @@
 				867FBC692E1B31640090CAFD /* override.html in Resources */,
 				867FBC7C2E1B31640090CAFD /* stats.js in Resources */,
 				867FBC722E1B31640090CAFD /* common.js in Resources */,
-				867FBC762E1B31640090CAFD /* es in Resources */,
 				867FBC742E1B31640090CAFD /* _locales in Resources */,
 				867FBC732E1B31640090CAFD /* popup.css in Resources */,
 				867FBC7A2E1B31640090CAFD /* themes in Resources */,
 				867FBC7D2E1B31640090CAFD /* jquery-ui in Resources */,
 				867FBC752E1B31640090CAFD /* content.js in Resources */,
 				867FBC782E1B31640090CAFD /* fonts in Resources */,
-				867FBC572E1B31640090CAFD /* vi in Resources */,
 				867FBC5E2E1B31640090CAFD /* background.js in Resources */,
 				867FBC712E1B31640090CAFD /* options.html in Resources */,
 				867FBC6C2E1B31640090CAFD /* icons in Resources */,
-				867FBC582E1B31640090CAFD /* he in Resources */,
 				867FBC612E1B31640090CAFD /* popup.html in Resources */,
 				867FBC6D2E1B31640090CAFD /* style.css in Resources */,
-				867FBC622E1B31640090CAFD /* pt_BR in Resources */,
 				867FBC5C2E1B31640090CAFD /* content.css in Resources */,
 				867FBC6B2E1B31640090CAFD /* override.js in Resources */,
 				867FBC6E2E1B31640090CAFD /* manifest.json in Resources */,
-				867FBC642E1B31640090CAFD /* it in Resources */,
 				867FBC5D2E1B31640090CAFD /* LICENSE in Resources */,
 				867FBC602E1B31640090CAFD /* lockdown.html in Resources */,
 				867FBC592E1B31640090CAFD /* stats.html in Resources */,
@@ -623,25 +598,20 @@
 				867FBC3F2E1B31640090CAFD /* override.html in Resources */,
 				867FBC522E1B31640090CAFD /* stats.js in Resources */,
 				867FBC482E1B31640090CAFD /* common.js in Resources */,
-				867FBC4C2E1B31640090CAFD /* es in Resources */,
 				867FBC4A2E1B31640090CAFD /* _locales in Resources */,
 				867FBC492E1B31640090CAFD /* popup.css in Resources */,
 				867FBC502E1B31640090CAFD /* themes in Resources */,
 				867FBC532E1B31640090CAFD /* jquery-ui in Resources */,
 				867FBC4B2E1B31640090CAFD /* content.js in Resources */,
 				867FBC4E2E1B31640090CAFD /* fonts in Resources */,
-				867FBC2D2E1B31640090CAFD /* vi in Resources */,
 				867FBC342E1B31640090CAFD /* background.js in Resources */,
 				867FBC472E1B31640090CAFD /* options.html in Resources */,
 				867FBC422E1B31640090CAFD /* icons in Resources */,
-				867FBC2E2E1B31640090CAFD /* he in Resources */,
 				867FBC372E1B31640090CAFD /* popup.html in Resources */,
 				867FBC432E1B31640090CAFD /* style.css in Resources */,
-				867FBC382E1B31640090CAFD /* pt_BR in Resources */,
 				867FBC322E1B31640090CAFD /* content.css in Resources */,
 				867FBC412E1B31640090CAFD /* override.js in Resources */,
 				867FBC442E1B31640090CAFD /* manifest.json in Resources */,
-				867FBC3A2E1B31640090CAFD /* it in Resources */,
 				867FBC332E1B31640090CAFD /* LICENSE in Resources */,
 				867FBC362E1B31640090CAFD /* lockdown.html in Resources */,
 				867FBC2F2E1B31640090CAFD /* stats.html in Resources */,
