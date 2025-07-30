@@ -1,0 +1,34 @@
+{
+
+	"extensionName": {
+		"message": "LeechBlock NG",
+		"description": "Name of the extension."
+	},
+
+	"extensionDescription": {
+		"message": "LeechBlock is a simple productivity tool for blocking time-wasting sites.",
+		"description": "Description of the extension."
+	},
+
+	"localePath": {
+		"message": "/he/",
+		"description": "Path to localized files."
+	},
+
+	"optionsMenuItem": { "message": "Options" },
+
+	"lockdownMenuItem": { "message": "Lockdown" },
+
+	"overrideMenuItem": { "message": "Override" },
+
+	"statisticsMenuItem": { "message": "Statistics" },
+
+	"addSiteMenuItem": { "message": "Add Site" },
+
+	"addSiteToBlockSetMenuItem": { "message": "Add Site to Block Set" },
+
+	"addPageMenuItem": { "message": "Add Page" },
+
+	"addPageToBlockSetMenuItem": { "message": "Add Page to Block Set" }
+
+}

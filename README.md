@@ -6,6 +6,8 @@ Safari Port of LeechBlock NG
 
 ```sh
 xcrun safari-web-extension-converter --project-location xcode --app-name ivBlock --bundle-identifier de.incuvolve.ivBlock LeechBlockNG
+
+xcrun safari-web-extension-converter --app-name ivBlock --bundle-identifier de.incuvolve.ivBlock LeechBlockNG
 ```
 
 ##  Warnings during conversion
