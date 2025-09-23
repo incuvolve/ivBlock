@@ -18,3 +18,11 @@ Warning: The following keys in your manifest.json are not supported by your curr
 	open_in_tab
 Warning: Persistent background pages are not supported on iOS and iPadOS. You will need to make changes to support a non-persistent background page.
 ```
+
+## Release Workflow
+
+* developments in LeechBlock submodule are being pushed to integration branch
+* developments and reference to LeechBlock submodule are pushed to development branch
+* create pull request from dev to main in GitHub
+* automated deployment to testflight
+* main branch checkout, pull changes and update submodules
