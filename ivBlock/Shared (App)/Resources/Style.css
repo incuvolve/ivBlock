@@ -56,6 +56,10 @@ body.state-off :is(.state-on, .state-unknown) {
     display: none;
 }
 
+body.no-js .js-only {
+    display: none;
+}
+
 button {
     font-size: 1em;
 }
