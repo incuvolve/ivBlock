@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>ivBlock Statistics</title>
+		<link href="/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+		<link href="/options.css" rel="stylesheet">
+		<link href="/icons/ivblock32.ico" rel="icon" type="image/x-icon">
+		<link href="/icons/ivblock32.ico" rel="shortcut icon" type="image/x-icon">
+		<link id="themeLink" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div id="form-container">
+
+			<form id="form" style="display: none;">
+
+				<fieldset class="ui-widget ui-widget-content">
+					<legend>ivBlock Statistics</legend>
+					<div id="stats-container">
+						<div id="stats-card-template" class="stats-card ui-widget-content">
+							<h3 class="block-set-name"></h3>
+							<ul class="stats-list">
+								<li><strong>Start Date/Time:</strong> <span class="start-time"></span></li>
+								<li><strong>Time Spent Since Start:</strong> <span class="total-time"></span></li>
+								<li><strong>Time Spent Per Week:</strong> <span class="per-week-time"></span></li>
+								<li><strong>Time Spent Per Day:</strong> <span class="per-day-time"></span></li>
+								<li><strong>Time Left in Limit Period:</strong> <span class="time-left"></span></li>
+								<li><strong>Rollover Time:</strong> <span class="rollover-time"></span></li>
+								<li><strong>Lockdown End Time:</strong> <span class="ld-end-time"></span></li>
+							</ul>
+							<button class="restart-button" type="button">Restart</button>
+						</div>
+					</div>
+					<button id="restartAll" type="button">Restart All</button>
+				</fieldset>
+
+			</form>
+
+		</div>
+
+		<script src="/jquery-ui/jquery.min.js"></script>
+		<script src="/jquery-ui/jquery-ui.min.js"></script>
+		<script src="/common.js"></script>
+		<script src="/stats.js"></script>
+
+	</body>
+
+</html>

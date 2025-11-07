@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>ivBlock Override</title>
+	<link href="/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+	<link href="/options.css" rel="stylesheet">
+	<link href="/icons/ivblock32.ico" rel="icon" type="image/x-icon">
+	<link href="/icons/ivblock32.ico" rel="shortcut icon" type="image/x-icon">
+	<link id="themeLink" rel="stylesheet">
+	<link href="/override.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="form-container">
+
+		<form id="form" style="display: none;" action="javascript: void(0);">
+
+			<fieldset class="ui-widget ui-widget-content">
+				<legend>ivBlock Override</legend>
+				<p>
+					Allow blocking to be suspended for<br> <input id="mins" type="text" size="2"> minute(s)
+				</p>
+			</fieldset>
+
+			<p class="button-container">
+				<button id="activate" type="submit">Activate Override</button>
+				<button id="cancel" type="button">Cancel</button>
+			</p>
+
+		</form>
+
+	</div>
+
+	<div id="alerts" style="display: none;">
+		<div id="alertRetrieveError" title="ivBlock Override">
+			<p><strong>Error:</strong> Unable to retrieve options from browser storage.</p>
+		</div>
+		<div id="alertLimitReached" title="ivBlock Override">
+			<p>You have reached your limit of <strong><span id="alertLimitNum"></span></strong> override(s) <span
+					id="alertLimitReachedPeriod"></span>.</p>
+		</div>
+		<div id="alertNoDuration" title="ivBlock Override">
+			<p>Please enter a non-zero duration for the override.</p>
+		</div>
+		<div id="alertOverrideActivated" title="ivBlock Override">
+			<p>Override activated. Blocking will be suspended until <strong><span
+						id="alertOverrideEndTime"></span></strong>.</p>
+			<p id="alertOverrideNoSets"><strong>Note:</strong> Override will have no effect because you have not
+				selected<br>"Allow temporary override for these sites" for any block sets.</p>
+			<p id="alertOverrideSets" style="display: none;">Override will be applied to sites in: <span
+					id="alertOverrideSetList"></span></p>
+			<p id="alertOverrideLimit" style="display: none;">You are allowed <strong><span
+						id="alertLimitLeft"></span></strong> more override(s) <span id="alertLimitPeriod"></span>.</p>
+		</div>
+	</div>
+
+	<div id="prompts" style="display: none;">
+		<div id="promptPassword" title="ivBlock Override">
+			<p>Enter the password to activate override:</p>
+			<p><input id="promptPasswordInput" type="text" size="60"></p>
+		</div>
+		<div id="promptAccessCode" title="ivBlock Override">
+			<p>Enter the following code to activate override:</p>
+			<p id="promptAccessCodeText"></p>
+			<p id="promptAccessCodeImage">
+				<canvas id="promptAccessCodeCanvas"></canvas>
+			</p>
+			<p><input id="promptAccessCodeInput" type="text" size="64"></p>
+		</div>
+	</div>
+
+	<script src="/jquery-ui/jquery.min.js"></script>
+	<script src="/jquery-ui/jquery-ui.min.js"></script>
+	<script src="/common.js"></script>
+	<script src="/override.js"></script>
+
+</body>
+
+</html>
