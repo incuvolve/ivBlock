@@ -171,43 +171,43 @@
 		867FBBDB2E1B31640090CAFD /* ivBlock Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ivBlock Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		867FBBE02E1B31640090CAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867FBBE12E1B31640090CAFD /* ivBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ivBlock.entitlements; sourceTree = "<group>"; };
-		867FBC012E1B31640090CAFD /* delayed.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = delayed.html; path = ../../LeechBlockNG/delayed.html; sourceTree = "<group>"; };
-		867FBC022E1B31640090CAFD /* diagnostics.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = diagnostics.js; path = ../../LeechBlockNG/diagnostics.js; sourceTree = "<group>"; };
-		867FBC052E1B31640090CAFD /* stats.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = stats.html; path = ../../LeechBlockNG/stats.html; sourceTree = "<group>"; };
-		867FBC062E1B31640090CAFD /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../LeechBlockNG/popup.js; sourceTree = "<group>"; };
-		867FBC072E1B31640090CAFD /* add-sites.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "add-sites.js"; path = "../../LeechBlockNG/add-sites.js"; sourceTree = "<group>"; };
-		867FBC082E1B31640090CAFD /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.css; path = ../../LeechBlockNG/content.css; sourceTree = "<group>"; };
-		867FBC092E1B31640090CAFD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LeechBlockNG/LICENSE; sourceTree = "<group>"; };
-		867FBC0A2E1B31640090CAFD /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../LeechBlockNG/background.js; sourceTree = "<group>"; };
-		867FBC0B2E1B31640090CAFD /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../LeechBlockNG/images; sourceTree = "<group>"; };
-		867FBC0C2E1B31640090CAFD /* lockdown.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = lockdown.html; path = ../../LeechBlockNG/lockdown.html; sourceTree = "<group>"; };
-		867FBC0D2E1B31640090CAFD /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../LeechBlockNG/popup.html; sourceTree = "<group>"; };
-		867FBC0F2E1B31640090CAFD /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = ../../LeechBlockNG/options.js; sourceTree = "<group>"; };
-		867FBC112E1B31640090CAFD /* blocked.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = blocked.js; path = ../../LeechBlockNG/blocked.js; sourceTree = "<group>"; };
-		867FBC122E1B31640090CAFD /* VERSIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = VERSIONS.md; path = ../../LeechBlockNG/VERSIONS.md; sourceTree = "<group>"; };
-		867FBC132E1B31640090CAFD /* add-sites.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "add-sites.html"; path = "../../LeechBlockNG/add-sites.html"; sourceTree = "<group>"; };
-		867FBC142E1B31640090CAFD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../LeechBlockNG/README.md; sourceTree = "<group>"; };
-		867FBC152E1B31640090CAFD /* override.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = override.html; path = ../../LeechBlockNG/override.html; sourceTree = "<group>"; };
-		867FBC162E1B31640090CAFD /* diagnostics.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = diagnostics.html; path = ../../LeechBlockNG/diagnostics.html; sourceTree = "<group>"; };
-		867FBC172E1B31640090CAFD /* override.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = override.js; path = ../../LeechBlockNG/override.js; sourceTree = "<group>"; };
-		867FBC182E1B31640090CAFD /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../LeechBlockNG/icons; sourceTree = "<group>"; };
-		867FBC192E1B31640090CAFD /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = style.css; path = ../../LeechBlockNG/style.css; sourceTree = "<group>"; };
-		867FBC1A2E1B31640090CAFD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../LeechBlockNG/manifest.json; sourceTree = "<group>"; };
-		867FBC1B2E1B31640090CAFD /* lockdown.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = lockdown.js; path = ../../LeechBlockNG/lockdown.js; sourceTree = "<group>"; };
-		867FBC1C2E1B31640090CAFD /* de */ = {isa = PBXFileReference; lastKnownFileType = folder; name = de; path = ../../LeechBlockNG/de; sourceTree = "<group>"; };
-		867FBC1D2E1B31640090CAFD /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../LeechBlockNG/options.html; sourceTree = "<group>"; };
-		867FBC1E2E1B31640090CAFD /* common.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = common.js; path = ../../LeechBlockNG/common.js; sourceTree = "<group>"; };
-		867FBC1F2E1B31640090CAFD /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../LeechBlockNG/popup.css; sourceTree = "<group>"; };
-		867FBC202E1B31640090CAFD /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../LeechBlockNG/_locales; sourceTree = "<group>"; };
-		867FBC212E1B31640090CAFD /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../LeechBlockNG/content.js; sourceTree = "<group>"; };
-		867FBC232E1B31640090CAFD /* fonts.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = fonts.css; path = ../../LeechBlockNG/fonts.css; sourceTree = "<group>"; };
-		867FBC242E1B31640090CAFD /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../LeechBlockNG/fonts; sourceTree = "<group>"; };
-		867FBC252E1B31640090CAFD /* blocked.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = blocked.html; path = ../../LeechBlockNG/blocked.html; sourceTree = "<group>"; };
-		867FBC262E1B31640090CAFD /* themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = themes; path = ../../LeechBlockNG/themes; sourceTree = "<group>"; };
-		867FBC272E1B31640090CAFD /* options.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = options.css; path = ../../LeechBlockNG/options.css; sourceTree = "<group>"; };
-		867FBC282E1B31640090CAFD /* stats.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = stats.js; path = ../../LeechBlockNG/stats.js; sourceTree = "<group>"; };
-		867FBC292E1B31640090CAFD /* jquery-ui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "jquery-ui"; path = "../../LeechBlockNG/jquery-ui"; sourceTree = "<group>"; };
-		867FBC2A2E1B31640090CAFD /* password.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = password.html; path = ../../LeechBlockNG/password.html; sourceTree = "<group>"; };
+		867FBC012E1B31640090CAFD /* delayed.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = delayed.html; path = ../../ivBlock/LeechBlockNG/delayed.html; sourceTree = "<group>"; };
+		867FBC022E1B31640090CAFD /* diagnostics.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = diagnostics.js; path = ../../ivBlock/LeechBlockNG/diagnostics.js; sourceTree = "<group>"; };
+		867FBC052E1B31640090CAFD /* stats.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = stats.html; path = ../../ivBlock/LeechBlockNG/stats.html; sourceTree = "<group>"; };
+		867FBC062E1B31640090CAFD /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../ivBlock/LeechBlockNG/popup.js; sourceTree = "<group>"; };
+		867FBC072E1B31640090CAFD /* add-sites.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "add-sites.js"; path = "../../ivBlock/LeechBlockNG/add-sites.js"; sourceTree = "<group>"; };
+		867FBC082E1B31640090CAFD /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.css; path = ../../ivBlock/LeechBlockNG/content.css; sourceTree = "<group>"; };
+		867FBC092E1B31640090CAFD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../ivBlock/LeechBlockNG/LICENSE; sourceTree = "<group>"; };
+		867FBC0A2E1B31640090CAFD /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../ivBlock/LeechBlockNG/background.js; sourceTree = "<group>"; };
+		867FBC0B2E1B31640090CAFD /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../ivBlock/LeechBlockNG/images; sourceTree = "<group>"; };
+		867FBC0C2E1B31640090CAFD /* lockdown.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = lockdown.html; path = ../../ivBlock/LeechBlockNG/lockdown.html; sourceTree = "<group>"; };
+		867FBC0D2E1B31640090CAFD /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../ivBlock/LeechBlockNG/popup.html; sourceTree = "<group>"; };
+		867FBC0F2E1B31640090CAFD /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = ../../ivBlock/LeechBlockNG/options.js; sourceTree = "<group>"; };
+		867FBC112E1B31640090CAFD /* blocked.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = blocked.js; path = ../../ivBlock/LeechBlockNG/blocked.js; sourceTree = "<group>"; };
+		867FBC122E1B31640090CAFD /* VERSIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = VERSIONS.md; path = ../../ivBlock/LeechBlockNG/VERSIONS.md; sourceTree = "<group>"; };
+		867FBC132E1B31640090CAFD /* add-sites.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "add-sites.html"; path = "../../ivBlock/LeechBlockNG/add-sites.html"; sourceTree = "<group>"; };
+		867FBC142E1B31640090CAFD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../ivBlock/LeechBlockNG/README.md; sourceTree = "<group>"; };
+		867FBC152E1B31640090CAFD /* override.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = override.html; path = ../../ivBlock/LeechBlockNG/override.html; sourceTree = "<group>"; };
+		867FBC162E1B31640090CAFD /* diagnostics.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = diagnostics.html; path = ../../ivBlock/LeechBlockNG/diagnostics.html; sourceTree = "<group>"; };
+		867FBC172E1B31640090CAFD /* override.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = override.js; path = ../../ivBlock/LeechBlockNG/override.js; sourceTree = "<group>"; };
+		867FBC182E1B31640090CAFD /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../ivBlock/LeechBlockNG/icons; sourceTree = "<group>"; };
+		867FBC192E1B31640090CAFD /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = style.css; path = ../../ivBlock/LeechBlockNG/style.css; sourceTree = "<group>"; };
+		867FBC1A2E1B31640090CAFD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../ivBlock/LeechBlockNG/manifest.json; sourceTree = "<group>"; };
+		867FBC1B2E1B31640090CAFD /* lockdown.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = lockdown.js; path = ../../ivBlock/LeechBlockNG/lockdown.js; sourceTree = "<group>"; };
+		867FBC1C2E1B31640090CAFD /* de */ = {isa = PBXFileReference; lastKnownFileType = folder; name = de; path = ../../ivBlock/LeechBlockNG/de; sourceTree = "<group>"; };
+		867FBC1D2E1B31640090CAFD /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../ivBlock/LeechBlockNG/options.html; sourceTree = "<group>"; };
+		867FBC1E2E1B31640090CAFD /* common.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = common.js; path = ../../ivBlock/LeechBlockNG/common.js; sourceTree = "<group>"; };
+		867FBC1F2E1B31640090CAFD /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../ivBlock/LeechBlockNG/popup.css; sourceTree = "<group>"; };
+		867FBC202E1B31640090CAFD /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../ivBlock/LeechBlockNG/_locales; sourceTree = "<group>"; };
+		867FBC212E1B31640090CAFD /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../ivBlock/LeechBlockNG/content.js; sourceTree = "<group>"; };
+		867FBC232E1B31640090CAFD /* fonts.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = fonts.css; path = ../../ivBlock/LeechBlockNG/fonts.css; sourceTree = "<group>"; };
+		867FBC242E1B31640090CAFD /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../ivBlock/LeechBlockNG/fonts; sourceTree = "<group>"; };
+		867FBC252E1B31640090CAFD /* blocked.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = blocked.html; path = ../../ivBlock/LeechBlockNG/blocked.html; sourceTree = "<group>"; };
+		867FBC262E1B31640090CAFD /* themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = themes; path = ../../ivBlock/LeechBlockNG/themes; sourceTree = "<group>"; };
+		867FBC272E1B31640090CAFD /* options.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = options.css; path = ../../ivBlock/LeechBlockNG/options.css; sourceTree = "<group>"; };
+		867FBC282E1B31640090CAFD /* stats.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = stats.js; path = ../../ivBlock/LeechBlockNG/stats.js; sourceTree = "<group>"; };
+		867FBC292E1B31640090CAFD /* jquery-ui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "jquery-ui"; path = "../../ivBlock/LeechBlockNG/jquery-ui"; sourceTree = "<group>"; };
+		867FBC2A2E1B31640090CAFD /* password.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = password.html; path = ../../ivBlock/LeechBlockNG/password.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -856,6 +856,9 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -887,6 +890,9 @@
 				PRODUCT_NAME = "ivBlock Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -899,12 +905,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 55G55963YD;
+				DEVELOPMENT_TEAM = 869Y2586A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ivBlock;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -925,6 +933,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.incuvolve.ivBlock;
 				PRODUCT_NAME = ivBlock;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -936,12 +947,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 55G55963YD;
+				DEVELOPMENT_TEAM = 869Y2586A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ivBlock;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -962,6 +975,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.incuvolve.ivBlock;
 				PRODUCT_NAME = ivBlock;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -973,8 +989,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/ivBlock.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 869Y2586A8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
@@ -1004,8 +1022,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/ivBlock.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 869Y2586A8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
@@ -1037,12 +1057,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/ivBlock.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 869Y2586A8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ivBlock;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1072,12 +1095,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/ivBlock.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 869Y2586A8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ivBlock;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (

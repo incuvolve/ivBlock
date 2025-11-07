@@ -21,8 +21,8 @@ Warning: Persistent background pages are not supported on iOS and iPadOS. You wi
 
 ## Release Workflow
 
-* developments in LeechBlock submodule are being pushed to integration branch
-* developments and reference to LeechBlock submodule are pushed to development branch
-* create pull request from dev to main in GitHub
+* developments in ivBlockCore submodule are being pushed to integration branch
+* developments and reference to ivBlockCore submodule are pushed to development branch
+* create pull request from dev to main in GitHub, rebase and merge
 * automated deployment to testflight
 * main branch checkout, pull changes and update submodules
