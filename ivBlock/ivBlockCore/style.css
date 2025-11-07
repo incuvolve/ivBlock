@@ -1,0 +1,134 @@
+/* ivBlock blocking/delaying page style */
+
+* {
+	box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+
+	body {
+		background: #fff;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+	body {
+		background: #222;
+	}
+
+}
+
+body {
+	color: #2e3436;
+	font: normal 16px "Open Sans", Arial, sans-serif;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+div {
+	margin-top: 40px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+a {
+	color: #2ca089;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+blockquote {
+	font-weight: bold;
+}
+
+input,
+button {
+	color: #333;
+	font: normal 16px "Open Sans", Arial, sans-serif;
+	padding: 10px 15px;
+	border: 1px solid #888;
+	border-radius: 6px;
+	min-height: 36px;
+}
+
+button {
+	background: #eee;
+	cursor: pointer;
+}
+
+button:hover:enabled {
+	background: #ddd;
+}
+
+button:active:enabled {
+	background: #ccc;
+}
+
+.logo {
+	max-width: 100%;
+	height: auto;
+}
+
+.keyword {
+	font-weight: bold;
+}
+
+.time {
+	font-weight: bold;
+}
+
+.delay {
+	font-weight: bold;
+}
+
+.error {
+	background: #f00;
+}
+
+.support {
+	color: #777;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.support a {
+	color: #777;
+	text-decoration: underline;
+}
+
+.support a:hover {
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+
+	input {
+		font-size: 16px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	#ivbPasswordInput {
+		width: 80%;
+		margin-bottom: 10px;
+	}
+
+	#ivbPasswordForm p {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

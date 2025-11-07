@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>ivBlock</title>
+	<link href="/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+	<link href="/popup.css" rel="stylesheet">
+	<link href="/icons/ivblock32.ico" rel="icon" type="image/x-icon">
+	<link href="/icons/ivblock32.ico" rel="shortcut icon" type="image/x-icon">
+	<link id="themeLink" rel="stylesheet">
+</head>
+
+<body>
+	<p><picture>
+			<source srcset="/images/ivblock_logo_dark_mode.png" media="(prefers-color-scheme: dark)">
+			<img width="200" height="35" src="/images/ivblock_logo.png" class="logo" alt="ivBlock logo" title="ivBlock">
+		</picture>
+	<p>
+	<div id="button-container" class="ui-widget">
+		<button id="options" type="button">Optionen</button>
+		<button id="lockdown" type="button">Lockdown</button>
+		<button id="override" type="button">Überschreiben</button>
+		<button id="stats" type="button">Statistiken</button>
+		<br><br>
+		<button id="addSites" type="button">Websites hinzufügen</button>
+		<button id="cancelOverride" type="button">Überschreiben abbrechen</button>
+		<button id="resetRollover" type="button">Rollover-Zeit zurücksetzen</button>
+		<button id="discardTime" type="button">Verbleibende Zeit verwerfen</button>
+		<br><br>
+		<button id="onlineSupport" type="button">Online-Hilfe</button>
+	</div>
+	<script src="/popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+@media (max-width: 600px) {
+	#form fieldset {
+		width: 80%;
+		margin: 0 auto;
+	}
+	#mins {
+		width: 50px;
+	}
+	.ui-dialog {
+		width: 90vw !important;
+		max-width: 320px !important;
+	}
+
+	.ui-dialog .ui-dialog-content p {
+		font-size: 1em;
+		word-wrap: break-word;
+	}
+
+	#promptPasswordInput,
+	#promptAccessCodeInput {
+		width: 95%;
+	}
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonset {
+	float: none !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: 5px;
+	width: 120px;
+	padding: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-container button {
+    margin: 5px;
+}
+
+#alertOverrideSetList ul {
+    padding-left: 20px;
+}
+
+.ui-widget {
+    margin: 20px;
+}
+
+.override-set-item {
+    margin-left: 20px;
+}

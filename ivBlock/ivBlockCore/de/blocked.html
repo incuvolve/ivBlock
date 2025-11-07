@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html id="ivbBlockingPage" lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Seite blockiert</title>
+	<link rel="shortcut icon" href="/icons/ivblock32.ico" type="image/x-icon">
+	<link rel="icon" href="/icons/ivblock32.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/fonts.css" type="text/css">
+	<link rel="stylesheet" href="/style.css" type="text/css">
+	<link id="themeLink" rel="stylesheet">
+	<style id="customStyle"></style>
+</head>
+
+<body>
+
+	<!-- logo -->
+	<div id="ivbLogoDiv">
+		<a href="https://www.incuvolve.de/ivblock/"><picture>
+				<source srcset="/images/ivblock_logo_dark_mode.png" media="(prefers-color-scheme: dark)">
+				<img id="ivbLogoImg" src="/images/ivblock_logo.png" class="logo"
+						alt="ivBlock logo" title="ivBlock">
+			</picture></a>
+	</div>
+
+	<!-- warning message -->
+	<div id="ivbWarningMsgDiv">
+		<h1>Die Seite, die du aufrufen willst, wurde von <a href="https://www.incuvolve.de/ivblock/">ivBlock</a>
+			gesperrt.</h1>
+	</div>
+
+	<!-- blocked site info -->
+	<div id="ivbBlockedDiv">
+		<a id="ivbBlockedURLLink" target="_self"><span id="ivbBlockedURL"></span></a>
+		(<span id="ivbBlockedSet">Blocksatz</span>)
+		<p id="ivbKeywordMatched" style="display: none;">Schlüsselwort gefunden: <span id="ivbKeywordMatch"
+				class="keyword"></span></p>
+		<p id="ivbUnblockText">Die Seite wird entsperrt ab: <span id="ivbUnblockTime" class="time">das Ende der
+				Zeit</span></p>
+	</div>
+
+	<!-- custom message (optional) -->
+	<div id="ivbCustomMsgDiv" style="display: none;">
+		<p>Eine Nachricht von dir selbst:</p>
+		<blockquote id="ivbCustomMsg"></blockquote>
+	</div>
+
+	<!-- support info -->
+	<div id="ivbSupportDiv" class="support">
+		Die Nutzung von ivBlock wird immer kostenlos sein, aber wenn es dein Leben verbessert
+		hat, solltest du in Erwägung ziehen, die Weiterentwicklung zu unterstützen indem du einen
+		<a href="https://www.ko-fi.com/MichaelHuelsen">Spendenbeitrag leistest</a>
+        <!--oder
+		<a href="https://addons.mozilla.org/firefox/addon/leechblock-ng/">eine Bewertung schreibst</a> im AppStore-->.
+	</div>
+
+	<script src="/blocked.js"></script>
+
+</body>
+
+</html>

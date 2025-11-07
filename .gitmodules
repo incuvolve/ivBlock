@@ -1,4 +1,4 @@
 [submodule "LeechBlockNG"]
-	path = ivBlock/LeechBlockNG
+	path = ivBlock/ivBlockCore/LeechBlockNG
 	url = https://github.com/incuvolve/LeechBlockNG/
 	branch = integration

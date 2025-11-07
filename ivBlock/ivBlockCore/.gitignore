@@ -1,0 +1,12 @@
+*.bat
+*.txt
+*.xlsx
+*.xpi
+
+jquery-ui/external/**
+.DS_Store
+
+# Node.js
+node_modules/
+coverage/
+*GEMINI*
