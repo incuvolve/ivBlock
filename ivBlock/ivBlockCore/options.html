@@ -312,7 +312,7 @@
 							<label>Enter a custom name for this block set (optional):</label>
 						</p>
 						<p>
-							<input id="setName1" type="text" size="60" class="limited-width">
+							<input id="setName1" type="text" size="60">
 						</p>
 						<p>
 							<label>Enter the domain names of the sites to block (one item per line):</label>
@@ -327,14 +327,10 @@
 						</p>
 						<p>
 							<strong>Tip:</strong>
-							Use <code>*</code> or <code>**</code> as <a
-								href="https://www.incuvolve.de/ivblock/faq/wildcards/" target="_blank">wildcard</a>,
-							<code>+</code> to prefix <a href="https://www.incuvolve.de/ivblock/faq/exceptions/"
-								target="_blank">exceptions</a>,
-							<code>&gt;</code> to prefix <a href="https://www.incuvolve.de/ivblock/faq/referrers/"
-								target="_blank">referrers</a>,
-							and <code>~</code> to prefix <a href="https://www.incuvolve.de/ivblock/faq/keywords/"
-								target="_blank">keywords</a>.
+							Use <code>*</code> or <code>**</code> as <a href="https://www.incuvolve.de/ivblock/faq/" target="_blank">wildcard</a>,
+							<code>+</code> to prefix <a href="https://www.incuvolve.de/ivBlock/faq//" target="_blank">exceptions</a>,
+							<code>&gt;</code> to prefix <a href="https://www.incuvolve.de/ivblock/faq/" target="_blank">referrers</a>,
+							and <code>~</code> to prefix <a href="https://www.incuvolve.de./ivblock/faq/" target="_blank">keywords</a>.
 						</p>
 					</fieldset>
 					<fieldset>
@@ -348,16 +344,16 @@
 						</p>
 						<p>
 							<input id="times1" type="text" size="60" placeholder="Example: 0900-1230,1330-1700"
-								title="Leave blank for no time periods" class="limited-width">
+								title="Leave blank for no time periods">
 							<button id="allDay1" type="button">All Day</button>
 						</p>
 						<p>
 							<label>Enter a time limit after which to block these sites (optional):</label>
 						</p>
 						<p>
-							<input id="limitMins1" type="text" size="4" title="Leave blank for no time limit" class="limited-width">
+							<input id="limitMins1" type="text" size="4" title="Leave blank for no time limit">
 							minutes in every
-							<select id="limitPeriod1" class="limited-width">
+							<select id="limitPeriod1">
 								<option value="">&nbsp;</option>
 								<option value="300">5 minutes</option>
 								<option value="600">10 minutes</option>
@@ -398,11 +394,11 @@
 						</p>
 						<p>
 							<label>Select when to block these sites:</label>
-							<select id="conjMode1" class="limited-width">
+							<select id="conjMode1">
 								<option>within time periods OR after time limit</option>
 								<option>within time periods AND after time limit</option>
 							</select>
-							&nbsp;&nbsp;<a href="https://www.incuvolve.de/ivblock/faq/difference-or-and/"
+							&nbsp;&nbsp;<a href="https://www.incuvolve.de/ivblock/faq/"
 								target="_blank">What's the difference?</a>
 						</p>
 						<p>
@@ -436,10 +432,10 @@
 						</p>
 						<p>
 							<input id="blockURL1" type="text" size="60" placeholder="http://somesite.com/somepage.html"
-								title="Use $U to pass URL of blocked page" class="limited-width">
+								title="Use $U to pass URL of blocked page">
 						</p>
 						<p>
-							<label>Predefined URLs:</label><br>
+							<label>Predefined URLs:</label>
 							<button id="defaultPage1" type="button">Default Page</button>
 							<button id="delayingPage1" type="button">Delaying Page</button>
 							<button id="passwordPage1" type="button">Password Page</button>
@@ -450,7 +446,7 @@
 								<label>Select the requirement for the password page:</label>
 							</p>
 							<p>
-								<select id="passwordRequire1" class="limited-width">
+								<select id="passwordRequire1">
 									<option value="0">Require the user to enter a set-specific password (see below)
 									</option>
 									<option value="1">Require the user to enter the override password</option>
@@ -459,7 +455,7 @@
 							</p>
 							<p>
 								<label>Set-specific password:</label>
-								<input id="passwordSetSpec1" type="password" size="40" class="limited-width">
+								<input id="passwordSetSpec1" type="password" size="40">
 							</p>
 						</div>
 						<p>
@@ -472,16 +468,20 @@
 						<hr>
 						<p class="simplifiable">
 							<label>Block pages in</label>
-							<select id="incogMode1" class="limited-width">
+							<select id="incogMode1">
 								<option value="0">both non-private and private tabs</option>
 								<option value="1">only non-private tabs</option>
 								<option value="2">only private tabs</option>
 							</select>
 						</p>
 						<p class="simplifiable">
+							<input id="onlyActive1" type="checkbox">
+							<label for="onlyActive1">Block pages only in active tabs</label>
+						</p>
+						<p class="simplifiable">
 							<input id="applyFilter1" type="checkbox">
 							<label for="applyFilter1">Apply filter instead of blocking page:</label>
-							<select id="filterName1" class="limited-width">
+							<select id="filterName1">
 								<option>blur (1px)</option>
 								<option>blur (2px)</option>
 								<option>blur (4px)</option>
@@ -523,10 +523,10 @@
 						</p>
 						<p class="simplifiable">
 							Allow access to sites for only <input id="delayAllowMins1" type="text" size="2"
-								title="Leave blank to allow indefinitely" class="limited-width"> minutes after delaying/password page is used
+								title="Leave blank to allow indefinitely"> minutes after delaying/password page is used
 						</p>
 						<p>
-							Delay access to sites by <input id="delaySecs1" type="text" size="2" class="limited-width"> seconds when delaying
+							Delay access to sites by <input id="delaySecs1" type="text" size="2"> seconds when delaying
 							page is used
 						</p>
 						<p class="simplifiable">
@@ -539,7 +539,7 @@
 							<label for="delayCancel1">Cancel delay countdown if delaying page loses focus</label>
 						</p>
 						<p class="simplifiable">
-							Attempt to reload blocked page every <input id="reloadSecs1" type="text" size="2" class="limited-width"> seconds
+							Attempt to reload blocked page every <input id="reloadSecs1" type="text" size="2"> seconds
 							(only applies to default page)
 						</p>
 						<p class="simplifiable">
@@ -548,7 +548,7 @@
 						</p>
 						<p class="simplifiable">
 							<input id="allowOverride1" type="checkbox">
-							Allow temporary override for these sites
+							<label for="allowOverride1">Allow temporary override for these sites</label>
 						</p>
 						<p class="simplifiable">
 							&nbsp;&nbsp;&nbsp;&nbsp;
@@ -586,7 +586,8 @@
 								block-conditions</label>
 						</p>
 						<p>
-							Wait <input id="waitSecs1" type="text" size="2" class="limited-width"> second(s) after page has loaded before
+							Wait <input id="waitSecs1" type="text" size="2" class="limited-width"> second(s) after page
+							has loaded before
 							checking blocking conditions
 						</p>
 						<hr>
@@ -615,6 +616,11 @@
 								<label for="prevProfiles1">Prevent access to <strong>about:profiles</strong> at times when these sites are blocked</label>
 							</p>
 						<p>
+							<input id="prevProfiles1" type="checkbox">
+							<label for="prevProfiles1">Prevent access to <strong>about:profiles</strong> at times when
+								these sites are blocked</label>
+						</p>
+						<p>
 							<input id="prevDebugging1" type="checkbox">
 							<label for="prevDebugging1">Prevent access to <strong>about:debugging</strong> at times when
 								these sites are blocked</label>
@@ -622,7 +628,8 @@
 						<p>
 							<input id="prevOverride1" type="checkbox">
 							<label for="prevOverride1">Allow override to apply to <strong>about:addons</strong>,
-								<strong>about:support</strong>, <strong>about:profiles</strong>, and <strong>about:debugging</strong></label>
+								<strong>about:support</strong>, <strong>about:profiles</strong>, and
+								<strong>about:debugging</strong></label>
 						</p>
 						<hr>
 						<p>
@@ -637,7 +644,8 @@
 						</p>
 						<p>
 							<input id="sitesURL1" type="text" size="60"
-								title="Use $S to pass block set number and $T to pass UTC timestamp in milliseconds" class="limited-width">
+								title="Use $S to pass block set number and $T to pass UTC timestamp in milliseconds"
+								class="limited-width">
 							&nbsp;&nbsp;<a href="https://www.incuvolve.de/ivblock/faq/load-from-url/"
 								target="_blank">What does this do?</a>
 						</p>
@@ -767,7 +775,8 @@
 						<legend>Temporary Override</legend>
 						<p>
 							Allow blocking to be suspended for <input id="overrideMins" type="text" size="2"
-								title="Leave blank to specify a duration when the override is activated" class="limited-width"> minute(s)
+								title="Leave blank to specify a duration when the override is activated"
+								class="limited-width"> minute(s)
 						</p>
 						<p>
 							Allow no more than <input id="overrideLimitNum" type="text" size="2"
@@ -862,7 +871,8 @@
 							<span id="clockOffsetTime" style="display: none;"></span>
 						</p>
 						<p class="simplifiable">
-							Ignore jumps in time spent greater than <input id="ignoreJumpSecs" type="text" size="4" class="limited-width">
+							Ignore jumps in time spent greater than <input id="ignoreJumpSecs" type="text" size="4"
+								class="limited-width">
 							seconds
 						</p>
 						<p class="simplifiable">
@@ -895,11 +905,13 @@
 					<fieldset class="simplifiable">
 						<legend>Performance</legend>
 						<p>
-							Save time data every <input id="saveSecs" type="text" size="2" title="Default: 10" class="limited-width">
+							Save time data every <input id="saveSecs" type="text" size="2" title="Default: 10"
+								class="limited-width">
 							second(s)
 						</p>
 						<p>
-							Process tabs every <input id="processTabsSecs" type="text" size="2" title="Default: 1" class="limited-width">
+							Process tabs every <input id="processTabsSecs" type="text" size="2" title="Default: 1"
+								class="limited-width">
 							second(s)
 						</p>
 						<p>
@@ -940,20 +952,31 @@
 						</span>
 					</fieldset>
 				</div>
+
+
+
+
+
+
+
+
+
 				<div id="paneAbout">
 					<p>
-						<a href="https://www.incuvolve.de/ivblock/" target="_blank"><picture>
+						<a href="https://www.incuvolve.de/ivblock/" target="_blank">
+							<picture>
 								<source srcset="images/ivblock_logo_dark_mode.png" media="(prefers-color-scheme: dark)">
-								<img src="images/ivblock_logo.png"
-									class="logo" alt="ivBlock logo" title="ivBlock">
-							</picture></a>
+								<img src="images/ivblock_logo.png" class="logo" alt="ivBlock logo" title="ivBlock">
+							</picture>
+						</a>
 					</p>
 					<p>
 						<a href="https://www.incuvolve.de/ivblock/" target="_blank">ivBlock</a>
 						is a simple productivity tool designed to<br>
 						block those time-wasting sites that can suck the life out of your working day.<br>
 						All you need to do is specify which sites to block and when to block them.<br><br>
-                        ivBlock was forked from <a href="https://www.proginosko.com/leechblock/" target="_blank">LeechBlock NG</a>.
+						ivBlock was forked from <a href="https://www.proginosko.com/leechblock/"
+							target="_blank">LeechBlock NG</a>.
 					</p>
 					<p><strong>Version:</strong> <span id="version">?<span></p>
 					<p><strong>License:</strong> <a href="http://www.mozilla.org/MPL/2.0/" target="_blank">Mozilla
