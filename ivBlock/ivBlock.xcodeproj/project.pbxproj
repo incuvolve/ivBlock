@@ -193,7 +193,7 @@
 		867FBC142E1B31640090CAFD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../ivBlock/ivBlockCore/README.md; sourceTree = "<group>"; };
 		867FBC152E1B31640090CAFD /* override.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = override.html; path = ../../ivBlock/ivBlockCore/override.html; sourceTree = "<group>"; };
 		867FBC162E1B31640090CAFD /* diagnostics.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = diagnostics.html; path = ../../ivBlock/ivBlockCore/diagnostics.html; sourceTree = "<group>"; };
-		867FBC172E1B31640090CAFD /* override.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = override.js; path = ../../ivBlock/ivBlockCore/override.js; sourceTree = "<group>"; };
+		867FBC172E1B31640090CAFD /* override.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = override.js; path = ../ivBlockCore/override.js; sourceTree = "<group>"; };
 		867FBC182E1B31640090CAFD /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../ivBlock/ivBlockCore/icons; sourceTree = "<group>"; };
 		867FBC192E1B31640090CAFD /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = style.css; path = ../../ivBlock/ivBlockCore/style.css; sourceTree = "<group>"; };
 		867FBC1A2E1B31640090CAFD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../ivBlock/ivBlockCore/manifest.json; sourceTree = "<group>"; };
@@ -369,11 +369,11 @@
 				867FBC1B2E1B31640090CAFD /* lockdown.js */,
 				867FBC1A2E1B31640090CAFD /* manifest.json */,
 				867FBC272E1B31640090CAFD /* options.css */,
+				867FBC172E1B31640090CAFD /* override.js */,
 				867FBC1D2E1B31640090CAFD /* options.html */,
 				867FBC0F2E1B31640090CAFD /* options.js */,
 				86B3A1B52EBE5AE200431451 /* override.css */,
 				867FBC152E1B31640090CAFD /* override.html */,
-				867FBC172E1B31640090CAFD /* override.js */,
 				867FBC2A2E1B31640090CAFD /* password.html */,
 				867FBC1F2E1B31640090CAFD /* popup.css */,
 				867FBC0D2E1B31640090CAFD /* popup.html */,
