@@ -2,8 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-const DEFAULT_OPTIONS_FILE = "ivBlockOptions.txt";
-const DEFAULT_JSON_FILE = "ivBlockOptions.json";
+const DEFAULT_OPTIONS_FILE = "ivBlockOptions-#.txt";
+const DEFAULT_JSON_FILE = "ivBlockOptions-#.json";
 
 const SUB_OPTIONS = {
 	"applyFilter": ["filterName", "filterMute"],
@@ -890,11 +890,33 @@ function applyImportOptions(options) {
 // Download blob file
 //
 function downloadBlobFile(blob, filename) {
-	let a = document.createElement("a");
-	a.href = URL.createObjectURL(blob);
-	a.setAttribute("download", filename);
-	a.setAttribute("type", blob.type);
-	a.dispatchEvent(new MouseEvent("click"));
+	//let a = document.createElement("a");
+	//a.href = URL.createObjectURL(blob);
+	//a.setAttribute("download", filename);
+	//a.setAttribute("type", blob.type);
+	//a.dispatchEvent(new MouseEvent("click"));
+    
+    // Create a new anchor element
+    //const a = document.createElement('a');
+
+    // Create an object URL for the blob
+    //const url = URL.createObjectURL(blob);
+    //a.href = url;
+    //a.download = filename || 'download';
+
+    // Set the visibility to 'hidden' so it doesn't affect the layout
+    //a.style.display = 'none';
+
+    // Append the anchor to the body
+    //document.body.appendChild(a);
+    // Programmatically click the anchor
+    //a.click();
+
+    // Remove the anchor from the body
+    //document.body.removeChild(a);
+
+    // Revoke the object URL to free up memory
+    //URL.revokeObjectURL(url);
 }
 
 // Export options to text file
@@ -917,7 +939,8 @@ function exportOptions() {
 
 	// Create blob and download it
 	let blob = new Blob(lines, { type: "text/plain", endings: "native" });
-	downloadBlobFile(blob, DEFAULT_OPTIONS_FILE);
+	let filename = DEFAULT_OPTIONS_FILE.replace("#", getTimestampSuffix());
+	downloadBlobFile(blob, filename);
 
 	$("#alertExportSuccess").dialog("open");
 }
@@ -997,7 +1020,8 @@ function exportOptionsJSON() {
 
 	// Create blob and download it
 	let blob = new Blob([json], { type: "application/json", endings: "native" });
-	downloadBlobFile(blob, DEFAULT_JSON_FILE);
+	let filename = DEFAULT_JSON_FILE.replace("#", getTimestampSuffix());
+	downloadBlobFile(blob, filename);
 
 	$("#alertExportSuccess").dialog("open");
 }

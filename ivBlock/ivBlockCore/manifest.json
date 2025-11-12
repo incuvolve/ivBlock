@@ -15,7 +15,7 @@
 			"common.js",
 			"background.js"
 		],
-        "persistent": false
+		"persistent": false
 	},
 	"browser_specific_settings": {
 		"gecko": {
@@ -90,6 +90,9 @@
 	},
 	"manifest_version": 3,
 	"name": "__MSG_extensionName__",
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'; child-src 'self' blob:;"
+	},
 	"options_ui": {
 		"page": "options.html",
 		"open_in_tab": true
