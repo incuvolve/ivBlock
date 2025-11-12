@@ -53,21 +53,257 @@
 
 		<form id="form" style="display: none;">
 
-			<div id="tabs">
-				<ul>
-					<li id="tabBlockSet1"><a href="#blockSet1"><span id="blockSetName1">Block Set 1</span></a></li>
-					<li id="tabGeneral"><a href="#paneGeneral">General</a></li>
-					<li id="tabAbout"><a href="#paneAbout">About</a></li>
-				</ul>
-				<div id="blockSet1">
-					<p style="display: flex; justify-content: space-between;">
-						<button id="moveSetL1" type="button">&larr; Move Set</button>
-						<button id="simpOpts1" type="button">Show Simplified Options</button>
-						<button id="fullOpts1" type="button" style="display: none;">Show Full Options</button>
-						<button id="moveSetR1" type="button">Move Set &rarr;</button>
-					</p>
-					<fieldset>
-						<legend>What to Block</legend>
+				<div id="tabs">
+					<ul>
+						<li id="tabBlockSet1"><a href="#blockSet1"><span id="blockSetName1">Block Set 1</span></a></li>
+						<li id="tabGeneral"><a href="#paneGeneral">General</a></li>
+						<li id="tabAbout"><a href="#paneAbout">About</a></li>
+					</ul>
+					<div id="blockSet1">
+						<p style="display: flex; justify-content: space-between;">
+							<button id="moveSetL1" type="button">&larr; Move Set</button>
+							<button id="simpOpts1" type="button">Show Simplified Options</button>
+							<button id="fullOpts1" type="button" style="display: none;">Show Full Options</button>
+							<button id="moveSetR1" type="button">Move Set &rarr;</button>
+						</p>
+						<fieldset>
+							<legend>What to Block</legend>
+							<p>
+								<em>In this section, specify the sites you want to block.</em>
+							</p>
+							<hr>
+							<p>
+								<label>Enter a custom name for this block set (optional):</label>
+							</p>
+							<p>
+								<input id="setName1" type="text" size="60">
+							</p>
+							<p>
+								<label>Enter the domain names of the sites to block (one item per line):</label>
+							</p>
+							<p>
+								<textarea id="sites1" cols="60" rows="10" spellcheck="false" placeholder="somesite.com"></textarea>
+							</p>
+							<p>
+								<strong>Note:</strong> Do <u>not</u> include URL protocol prefixes such as <code>http://</code> or <code>file://</code>.
+							</p>
+							<p>
+								<strong>Tip:</strong>
+								Use <code>*</code> or <code>**</code> as <a href="https://www.proginosko.com/leechblock/faq/wildcards/" target="_blank">wildcard</a>,
+								<code>+</code> to prefix <a href="https://www.proginosko.com/leechblock/faq/exceptions/" target="_blank">exceptions</a>,
+								<code>&gt;</code> to prefix <a href="https://www.proginosko.com/leechblock/faq/referrers/" target="_blank">referrers</a>,
+								and <code>~</code> to prefix <a href="https://www.proginosko.com/leechblock/faq/keywords/" target="_blank">keywords</a>.
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>When to Block</legend>
+							<p>
+								<em>In this section, specify when you want to block these sites.</em>
+							</p>
+							<hr>
+							<p>
+								<label>Enter the time periods within which to block these sites (optional):</label>
+							</p>
+							<p>
+								<input id="times1" type="text" size="60" placeholder="Example: 0900-1230,1330-1700" title="Leave blank for no time periods">
+								<button id="allDay1" type="button">All Day</button>
+							</p>
+							<p>
+								<label>Enter a time limit after which to block these sites (optional):</label>
+							</p>
+							<p>
+								<input id="limitMins1" type="text" size="4" title="Leave blank for no time limit">
+								minutes in every
+								<select id="limitPeriod1">
+									<option value="">&nbsp;</option>
+									<option value="300">5 minutes</option>
+									<option value="600">10 minutes</option>
+									<option value="900">15 minutes</option>
+									<option value="1200">20 minutes</option>
+									<option value="1800">half-hour (30 minutes)</option>
+									<option value="3600">hour (60 minutes)</option>
+									<option value="5400">1.5 hours (90 minutes)</option>
+									<option value="7200">2 hours</option>
+									<option value="10800">3 hours</option>
+									<option value="14400">4 hours</option>
+									<option value="21600">6 hours</option>
+									<option value="28800">8 hours</option>
+									<option value="43200">half-day (12 hours)</option>
+									<option value="86400">day (24 hours)</option>
+									<option value="172800">2 days</option>
+									<option value="259200">3 days</option>
+									<option value="345600">4 days</option>
+									<option value="604800">week (7 days)</option>
+									<option value="1209600">2 weeks (14 days)</option>
+									<option value="2592000">1 month (30 days)</option>
+									<option value="5184000">2 months (60 days)</option>
+									<option value="7776000">3 months (90 days)</option>
+								</select>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input id="rollover1" type="checkbox">
+								<label for="rollover1">Roll over unused time</label>
+							</p>
+							<p>
+								<input id="countFocus1" type="checkbox">
+								<label for="countFocus1">Count time spent on these sites only when browser tab is active</label>
+							</p>
+							<p class="simplifiable">
+								<input id="countAudio1" type="checkbox">
+								<label for="countAudio1">Count time spent on these sites only when browser tab is playing audio</label>
+							</p>
+							<p>
+								<label>Select when to block these sites:</label>
+								<select id="conjMode1">
+									<option>within time periods OR after time limit</option>
+									<option>within time periods AND after time limit</option>
+								</select>
+								&nbsp;&nbsp;<a href="https://www.proginosko.com/leechblock/faq/difference-or-and/" target="_blank">What's the difference?</a>
+							</p>
+							<p>
+								<label>Select the days on which to block these sites:</label>
+							</p>
+							<p id="days1">
+								<input id="day01" type="checkbox"><label for="day01">Sun</label>
+								&nbsp;
+								<input id="day11" type="checkbox"><label for="day11">Mon</label>
+								&nbsp;
+								<input id="day21" type="checkbox"><label for="day21">Tue</label>
+								&nbsp;
+								<input id="day31" type="checkbox"><label for="day31">Wed</label>
+								&nbsp;
+								<input id="day41" type="checkbox"><label for="day41">Thu</label>
+								&nbsp;
+								<input id="day51" type="checkbox"><label for="day51">Fri</label>
+								&nbsp;
+								<input id="day61" type="checkbox"><label for="day61">Sat</label>
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>How to Block</legend>
+							<p>
+								<em>In this section, specify how you want to block these sites.</em>
+							</p>
+							<hr>
+							<p>
+								<label>Enter the fully specified URL of the page to show instead of these blocked sites:</label>
+							</p>
+							<p>
+								<input id="blockURL1" type="text" size="60" placeholder="http://somesite.com/somepage.html" title="Use $U to pass URL of blocked page">
+							</p>
+							<p>
+								<label>Predefined URLs:</label>
+								<button id="defaultPage1" type="button">Default Page</button>
+								<button id="delayingPage1" type="button">Delaying Page</button>
+								<button id="passwordPage1" type="button">Password Page</button>
+								<button id="blankPage1" type="button">Blank Page</button>
+							</p>
+							<div id="passwordPageOpts1">
+								<p>
+									<label>Select the requirement for the password page:</label>
+								</p>
+								<p>
+									<select id="passwordRequire1">
+										<option value="0">Require the user to enter a set-specific password (see below)</option>
+										<option value="1">Require the user to enter the override password</option>
+										<option value="2">Require the user to enter the access control password</option>
+									</select>
+								</p>
+								<p>
+									<label>Set-specific password:</label>
+									<input id="passwordSetSpec1" type="password" size="40">
+								</p>
+							</div>
+							<p>
+								<label>Enter a custom message for the blocking page (optional):</label>
+							</p>
+							<p>
+								<textarea id="customMsg1" cols="60" rows="4" placeholder="Example: Get back to work!"></textarea>
+							</p>
+							<hr>
+							<p class="simplifiable">
+								<label>Block pages in</label>
+								<select id="incogMode1">
+									<option value="0">both non-private and private tabs</option>
+									<option value="1">only non-private tabs</option>
+									<option value="2">only private tabs</option>
+								</select>
+							</p>
+							<p class="simplifiable">
+								<input id="onlyActive1" type="checkbox">
+								<label for="onlyActive1">Block pages only in active tabs</label>
+							</p>
+							<p class="simplifiable">
+								<input id="applyFilter1" type="checkbox">
+								<label for="applyFilter1">Apply filter instead of blocking page:</label>
+								<select id="filterName1">
+									<option>blur (1px)</option>
+									<option>blur (2px)</option>
+									<option>blur (4px)</option>
+									<option>blur (8px)</option>
+									<option>blur (16px)</option>
+									<option>blur (32px)</option>
+									<option>fade (80%)</option>
+									<option>fade (90%)</option>
+									<option>fade (100%)</option>
+									<option>grayscale</option>
+									<option>invert</option>
+									<option>sepia</option>
+								</select>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input id="filterMute1" type="checkbox">
+								<label for="filterMute1">Mute tab with filter</label>
+							</p>
+							<p>
+								<input id="closeTab1" type="checkbox">
+								<label for="closeTab1">Close tab instead of blocking page</label>
+							</p>
+							<p>
+								<input id="activeBlock1" type="checkbox">
+								<label for="activeBlock1">Immediately block pages on these sites once blocking conditions are met</label>
+							</p>
+							<p class="simplifiable">
+								<input id="showKeyword1" type="checkbox">
+								<label for="showKeyword1">Show matched keyword on blocking page</label>
+							</p>
+							<p class="simplifiable">
+								<input id="titleOnly1" type="checkbox">
+								<label for="titleOnly1">Check for keywords only in page title</label>
+							</p>
+							<p class="simplifiable">
+								<input id="delayFirst1" type="checkbox">
+								<label for="delayFirst1">Block only first accessed page of site when delaying/password page is used</label>
+							</p>
+							<p class="simplifiable">
+								Allow access to sites for only <input id="delayAllowMins1" type="text" size="2" title="Leave blank to allow indefinitely"> minutes after delaying/password page is used
+							</p>
+							<p>
+								Delay access to sites by <input id="delaySecs1" type="text" size="2"> seconds when delaying page is used
+							</p>
+							<p class="simplifiable">
+								<input id="delayAutoLoad1" type="checkbox">
+								<label for="delayAutoLoad1">Automatically load blocked page when delay countdown reaches zero</label>
+							</p>
+							<p class="simplifiable">
+								<input id="delayCancel1" type="checkbox">
+								<label for="delayCancel1">Cancel delay countdown if delaying page loses focus</label>
+							</p>
+							<p class="simplifiable">
+								Attempt to reload blocked page every <input id="reloadSecs1" type="text" size="2"> seconds (only applies to default page)
+							</p>
+							<p class="simplifiable">
+								<input id="addHistory1" type="checkbox">
+								<label for="addHistory1">Add blocked page to browser history</label>
+							</p>
+							<p class="simplifiable">
+								<input id="allowOverride1" type="checkbox">
+								<label for="allowOverride1">Allow temporary override for these sites</label>
+							</p>
+							<p class="simplifiable">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input id="allowOverLock1" type="checkbox">
+								<label for="allowOverLock1">Allow temporary override during lockdown</label>
+							</p>
+						</fieldset>
 						<p>
 							<em>In this section, specify the sites you want to block.</em>
 						</p>
@@ -374,6 +610,10 @@
 							<label for="prevSupport1">Prevent access to <strong>about:support</strong> at times when
 								these sites are blocked</label>
 						</p>
+							<p>
+								<input id="prevProfiles1" type="checkbox">
+								<label for="prevProfiles1">Prevent access to <strong>about:profiles</strong> at times when these sites are blocked</label>
+							</p>
 						<p>
 							<input id="prevDebugging1" type="checkbox">
 							<label for="prevDebugging1">Prevent access to <strong>about:debugging</strong> at times when
@@ -382,7 +622,7 @@
 						<p>
 							<input id="prevOverride1" type="checkbox">
 							<label for="prevOverride1">Allow override to apply to <strong>about:addons</strong>,
-								<strong>about:support</strong>, and <strong>about:debugging</strong></label>
+								<strong>about:support</strong>, <strong>about:profiles</strong>, and <strong>about:debugging</strong></label>
 						</p>
 						<hr>
 						<p>

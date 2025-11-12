@@ -24,21 +24,24 @@ body {
 	color: #000;
 	font-size: 16px;
 	text-align: center;
-	overflow-x: hidden;
 	padding: 10px;
-	min-height: 800px;
+	width: 350px;
+	min-height: 0;
+	margin: 0 auto;
 }
 
 #button-container {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	justify-content: center;
+	align-items: center;
 	gap: 10px;
 }
 
 button {
-	display: inline;
-	width: 100%;
+	display: block;
+	width: auto;
 	margin: 0;
 	padding: 10px;
 	background: #eee;
@@ -60,4 +63,16 @@ button:active:enabled {
 	max-width: 100%;
 	height: auto;
 	margin-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+	#button-container {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	button {
+		display: inline;
+		width: 100%;
+	}
 }
