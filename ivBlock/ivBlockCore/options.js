@@ -917,6 +917,15 @@ function downloadBlobFile(blob, filename) {
 
     // Revoke the object URL to free up memory
     //URL.revokeObjectURL(url);
+    
+    // Create a blob URL for the file data
+    const url = URL.createObjectURL(blob);
+
+    // Open in a new tab or window
+    window.open(url, "_blank");
+
+    // Optional: revoke the blob URL after a short delay to free memory
+    setTimeout(() => URL.revokeObjectURL(url), 10_000);
 }
 
 // Export options to text file
