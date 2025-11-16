@@ -57,3 +57,11 @@
 .override-set-item {
     margin-left: 20px;
 }
+
+.ui-widget-content .ui-icon {
+    background-image: url("jquery-ui/images/ui-icons_444444_256x240.png");
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("jquery-ui/images/ui-icons_444444_256x240.png");
+}

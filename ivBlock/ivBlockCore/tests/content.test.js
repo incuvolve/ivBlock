@@ -96,8 +96,8 @@ describe('content.js', () => {
 
         // Spy on real DOM methods
         createElementSpy = jest.spyOn(global.document, 'createElement');
-        appendChildSpy = jest.spyOn(global.document.body, 'appendChild');
-        removeChildSpy = jest.spyOn(global.document.body, 'removeChild'); // Spy on document.body for dynamically created elements
+        appendChildSpy = jest.spyOn(global.document.documentElement, 'appendChild');
+        removeChildSpy = jest.spyOn(global.document.documentElement, 'removeChild'); // Spy on document.documentElement for dynamically created elements
         addEventListenerSpy = jest.spyOn(global.HTMLElement.prototype, 'addEventListener');
         setAttributeSpy = jest.spyOn(global.HTMLElement.prototype, 'setAttribute');
 
