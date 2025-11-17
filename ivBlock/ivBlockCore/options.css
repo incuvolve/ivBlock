@@ -1,7 +1,9 @@
 
 /* ivBlock options style */
 
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 

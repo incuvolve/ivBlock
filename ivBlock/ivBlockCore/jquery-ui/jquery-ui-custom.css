@@ -1,0 +1,4 @@
+/* Custom overrides for jQuery UI CSS */
+.ui-icon, .ui-widget-content .ui-icon, .ui-widget-header .ui-icon {
+    background-image: url("/jquery-ui/images/ui-icons_444444_256x240.png") !important;
+}
