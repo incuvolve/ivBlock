@@ -39,25 +39,7 @@ body {
 	gap: 10px;
 }
 
-button {
-	display: block;
-	width: auto;
-	margin: 0;
-	padding: 10px;
-	background: #eee;
-	border: 1px solid #888;
-	border-radius: 8px;
-	font-size: 1em;
-	cursor: pointer;
-}
 
-button:hover:enabled {
-	background: #ddd;
-}
-
-button:active:enabled {
-	background: #ccc;
-}
 
 .logo {
 	max-width: 100%;
@@ -65,14 +47,84 @@ button:active:enabled {
 	margin-bottom: 10px;
 }
 
+
+/* New styles for button alignment and sizing */
+.button-group {
+    text-align: center; /* Center buttons within this group */
+    margin-top: 10px; /* Add some vertical spacing */
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    margin: 5px; /* Spacing between buttons */
+    display: inline-block; /* Allow buttons to sit next to each other and be centered */
+}
+
+/* General button styling for smoother sizing */
+.ivblock-button {
+    /* Font */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1em; /* Base font size for buttons */
+    font-weight: 500; /* Medium weight often used in iOS */
+
+    /* Sizing */
+    padding: 0.8em 1.2em; /* Use em for smoother sizing relative to font-size */
+    min-width: 120px; /* Minimum width for consistency */
+    max-width: 200px; /* Maximum width to prevent excessive growth */
+    width: 100%; /* Allow it to take full width if content is small, but constrained by max-width */
+
+    /* Appearance */
+    background-color: #007AFF; /* iOS blue for primary action, or a light gray for default */
+    color: #FFFFFF; /* White text for primary blue button */
+    border: none; /* No border for a cleaner look */
+    border-radius: 10px; /* More rounded corners for iOS feel */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; /* Smooth transitions */
+    -webkit-appearance: none; /* Remove default button styles for consistency */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Default button style (e.g., for secondary actions) */
+.ivblock-button.default {
+    background-color: #EFEFF4; /* Light gray background */
+    color: #000000; /* Dark text */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover/Active states */
+.ivblock-button:hover:enabled {
+    background-color: #005BBF; /* Darker blue on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.ivblock-button.default:hover:enabled {
+    background-color: #DFDFE4; /* Darker gray on hover */
+}
+
+.ivblock-button:active:enabled {
+    background-color: #003D80; /* Even darker blue on active */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px); /* Slight press effect */
+}
+
+.ivblock-button.default:active:enabled {
+    background-color: #CFCFD4; /* Even darker gray on active */
+}
+
+/* Disabled state */
+.ivblock-button:disabled {
+    background-color: #A9A9A9; /* Lighter gray for disabled */
+    color: #FFFFFF;
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
 @media (max-width: 400px) {
 	#button-container {
 		flex-wrap: wrap;
 		flex-direction: row;
-	}
-
-	button {
-		display: inline;
-		width: 100%;
 	}
 }
