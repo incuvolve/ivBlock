@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863FC97A2ECD2BD30017989D /* buttons.css in Resources */ = {isa = PBXBuildFile; fileRef = 863FC9792ECD2BD30017989D /* buttons.css */; };
+		863FC97B2ECD2BD30017989D /* buttons.css in Resources */ = {isa = PBXBuildFile; fileRef = 863FC9792ECD2BD30017989D /* buttons.css */; };
 		867FBBB62E1B31630090CAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FBBB52E1B31630090CAFD /* AppDelegate.swift */; };
 		867FBBB82E1B31630090CAFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FBBB72E1B31630090CAFD /* SceneDelegate.swift */; };
 		867FBBBB2E1B31630090CAFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867FBBB92E1B31630090CAFD /* LaunchScreen.storyboard */; };
@@ -152,6 +154,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		863FC9792ECD2BD30017989D /* buttons.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = buttons.css; path = ivBlockCore/buttons.css; sourceTree = SOURCE_ROOT; };
 		867FBBA62E1B31620090CAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		867FBBA72E1B31620090CAFD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		867FBBA82E1B31620090CAFD /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -345,6 +348,7 @@
 		867FBC002E1B31640090CAFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				863FC9792ECD2BD30017989D /* buttons.css */,
 				867FBC202E1B31640090CAFD /* _locales */,
 				867FBC132E1B31640090CAFD /* add-sites.html */,
 				867FBC072E1B31640090CAFD /* add-sites.js */,
@@ -567,6 +571,7 @@
 				867FBC742E1B31640090CAFD /* _locales in Resources */,
 				867FBC732E1B31640090CAFD /* popup.css in Resources */,
 				867FBC7A2E1B31640090CAFD /* themes in Resources */,
+				863FC97A2ECD2BD30017989D /* buttons.css in Resources */,
 				867FBC7D2E1B31640090CAFD /* jquery-ui in Resources */,
 				867FBC752E1B31640090CAFD /* content.js in Resources */,
 				867FBC782E1B31640090CAFD /* fonts in Resources */,
@@ -613,6 +618,7 @@
 				867FBC4A2E1B31640090CAFD /* _locales in Resources */,
 				867FBC492E1B31640090CAFD /* popup.css in Resources */,
 				867FBC502E1B31640090CAFD /* themes in Resources */,
+				863FC97B2ECD2BD30017989D /* buttons.css in Resources */,
 				867FBC532E1B31640090CAFD /* jquery-ui in Resources */,
 				867FBC4B2E1B31640090CAFD /* content.js in Resources */,
 				867FBC4E2E1B31640090CAFD /* fonts in Resources */,
@@ -863,7 +869,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -897,7 +903,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -938,7 +944,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -979,7 +985,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1020,7 +1026,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1055,7 +1061,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1094,7 +1100,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1135,7 +1141,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
