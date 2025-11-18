@@ -61,11 +61,11 @@
 					<li id="tabAbout"><a href="#paneAbout">About</a></li>
 				</ul>
 				<div id="blockSet1">
-					<p style="display: flex; justify-content: space-between;">
-						<button id="moveSetL1" type="button">&larr; Move Set</button>
-						<button id="simpOpts1" type="button">Show Simplified Options</button>
-						<button id="fullOpts1" type="button" style="display: none;">Show Full Options</button>
-						<button id="moveSetR1" type="button">Move Set &rarr;</button>
+					<p class="button-group">
+						<button id="moveSetL1" type="button" class="ivblock-button default">&larr; Move Set</button>
+						<button id="simpOpts1" type="button" class="ivblock-button default">Show Simplified Options</button>
+						<button id="fullOpts1" type="button" class="ivblock-button default" style="display: none;">Show Full Options</button>
+						<button id="moveSetR1" type="button" class="ivblock-button default">Move Set &rarr;</button>
 					</p>
 					<fieldset>
 						<legend>What to Block</legend>
@@ -115,7 +115,9 @@
 						<p>
 							<input id="times1" type="text" size="60" placeholder="Example: 0900-1230,1330-1700"
 								title="Leave blank for no time periods">
-							<button id="allDay1" type="button">All Day</button>
+						</p>
+						<p class="button-group">
+							<button id="allDay1" type="button" class="ivblock-button default">All Day</button>
 						</p>
 						<p>
 							<label>Enter a time limit after which to block these sites (optional):</label>
@@ -175,19 +177,13 @@
 							<label>Select the days on which to block these sites:</label>
 						</p>
 						<p id="days1">
-							<input id="day01" type="checkbox"><label for="day01">Sun</label>
-							&nbsp;
-							<input id="day11" type="checkbox"><label for="day11">Mon</label>
-							&nbsp;
-							<input id="day21" type="checkbox"><label for="day21">Tue</label>
-							&nbsp;
-							<input id="day31" type="checkbox"><label for="day31">Wed</label>
-							&nbsp;
-							<input id="day41" type="checkbox"><label for="day41">Thu</label>
-							&nbsp;
-							<input id="day51" type="checkbox"><label for="day51">Fri</label>
-							&nbsp;
-							<input id="day61" type="checkbox"><label for="day61">Sat</label>
+							<span class="nowrap-item"><input id="day01" type="checkbox"><label for="day01">Sunday</label></span>
+							<span class="nowrap-item"><input id="day11" type="checkbox"><label for="day11">Monday</label></span>
+							<span class="nowrap-item"><input id="day21" type="checkbox"><label for="day21">Tuesday</label></span>
+							<span class="nowrap-item"><input id="day31" type="checkbox"><label for="day31">Wednesday</label></span>
+							<span class="nowrap-item"><input id="day41" type="checkbox"><label for="day41">Thursday</label></span>
+							<span class="nowrap-item"><input id="day51" type="checkbox"><label for="day51">Friday</label></span>
+							<span class="nowrap-item"><input id="day61" type="checkbox"><label for="day61">Saturday</label></span>
 						</p>
 					</fieldset>
 					<fieldset>
@@ -204,12 +200,11 @@
 							<input id="blockURL1" type="text" size="60" placeholder="http://somesite.com/somepage.html"
 								title="Use $U to pass URL of blocked page">
 						</p>
-						<p>
-							<label>Predefined URLs:</label>
-							<button id="defaultPage1" type="button">Default Page</button>
-							<button id="delayingPage1" type="button">Delaying Page</button>
-							<button id="passwordPage1" type="button">Password Page</button>
-							<button id="blankPage1" type="button">Blank Page</button>
+						<p class="button-group">
+							<button id="defaultPage1" type="button" class="ivblock-button default">Default Page</button>
+							<button id="delayingPage1" type="button" class="ivblock-button default">Delaying Page</button>
+							<button id="passwordPage1" type="button" class="ivblock-button default">Password Page</button>
+							<button id="blankPage1" type="button" class="ivblock-button default">Blank Page</button>
 						</p>
 						<div id="passwordPageOpts1">
 							<p>
@@ -326,9 +321,9 @@
 							<label for="allowOverLock1">Allow temporary override during lockdown</label>
 						</p>
 					</fieldset>
-					<p>
-						<button id="resetOpts1" type="button">Reset Options to Defaults</button>
-						<button id="showAdvOpts1" type="button" class="simplifiable">Show Advanced Options</button>
+					<p class="button-group">
+						<button id="resetOpts1" type="button" class="ivblock-button default">Reset Options to Defaults</button>
+						<button id="showAdvOpts1" type="button" class="simplifiable ivblock-button default">Show Advanced Options</button>
 					</p>
 					<fieldset id="advOpts1">
 						<legend>Advanced Options</legend>
@@ -423,8 +418,8 @@
 						</p>
 						<p>
 							<input id="regexpBlock1" type="text" size="60" class="limited-width">
-							<button id="clearRegExpBlock1" type="button">Clear</button>
-							<button id="genRegExpBlock1" type="button">Generate From Site List</button>
+							<button id="clearRegExpBlock1" type="button" class="ivblock-button default">Clear</button>
+							<button id="genRegExpBlock1" type="button" class="ivblock-button default">Generate From Site List</button>
 						</p>
 						<p>
 							<label>Use <a
@@ -434,16 +429,16 @@
 						</p>
 						<p>
 							<input id="regexpAllow1" type="text" size="60" class="limited-width">
-							<button id="clearRegExpAllow1" type="button">Clear</button>
-							<button id="genRegExpAllow1" type="button">Generate From Site List</button>
+							<button id="clearRegExpAllow1" type="button" class="ivblock-button default">Clear</button>
+							<button id="genRegExpAllow1" type="button" class="ivblock-button default">Generate From Site List</button>
 						</p>
 						<p>
 							<input id="ignoreHash1" type="checkbox">
 							<label for="ignoreHash1">Ignore fragment (hash part) when checking URL</label>
 						</p>
 						<hr>
-						<p>
-							<button id="cancelLockdown1" type="button" disabled="disabled">Cancel Active
+						<p class="button-group">
+							<button id="cancelLockdown1" type="button" disabled="disabled" class="ivblock-button default">Cancel Active
 								Lockdown</button>
 						</p>
 					</fieldset>
@@ -456,9 +451,9 @@
 
 
 				<div id="paneGeneral">
-					<p style="text-align: center;">
-						<button id="simpOptsGen" type="button">Show Simplified Options</button>
-						<button id="fullOptsGen" type="button" style="display: none;">Show Full Options</button>
+					<p class="button-group">
+						<button id="simpOptsGen" type="button" class="ivblock-button default">Show Simplified Options</button>
+						<button id="fullOptsGen" type="button" class="ivblock-button default" style="display: none;">Show Full Options</button>
 					</p>
 					<fieldset>
 						<legend>Block Sets</legend>
@@ -700,12 +695,16 @@
 							for any block set.
 						</p>
 						<p>
-							<button id="exportOptions" type="button">Export Options to Text File</button>
-							<button id="importOptions" type="button">Import Options from Text File</button>
+							<input id="downloadToFile" type="checkbox" checked>
+							<label for="downloadToFile">Download options to file (otherwise, show in new tab)</label>
+						</p>
+						<p class="button-group">
+							<button id="exportOptions" type="button" class="ivblock-button default">Export Options<br>to Text File</button>
+							<button id="importOptions" type="button" class="ivblock-button default">Import Options<br>from Text File</button>
 							<input type="file" id="importFile">
 						</p>
-						<p class="simplifiable">
-							<button id="exportOptionsJSON" type="button">Export Options to JSON File</button>
+						<p class="simplifiable button-group">
+							<button id="exportOptionsJSON" type="button" class="ivblock-button default">Export Options<br>to JSON File</button>
 						</p>
 						<p>
 							<input id="exportPasswords" type="checkbox">
@@ -713,9 +712,9 @@
 						</p>
 						<span id="syncOpts2">
 							<hr>
-							<p>
-								<button id="exportOptionsSync" type="button">Export Options to Sync Storage</button>
-								<button id="importOptionsSync" type="button">Import Options from Sync Storage</button>
+							<p class="button-group">
+								<button id="exportOptionsSync" type="button" class="ivblock-button default">Export Options<br>to Sync Storage</button>
+								<button id="importOptionsSync" type="button" class="ivblock-button default">Import Options<br>from Sync Storage</button>
 							</p>
 							<p>
 								<input id="autoExportSync" type="checkbox">
@@ -745,17 +744,17 @@
 					</p>
 					<p>
 						<a href="https://www.incuvolve.de/ivblock/" target="_blank">ivBlock</a>
-						is a simple productivity tool designed to<br>
-						block those time-wasting sites that can suck the life out of your working day.<br>
+						is a simple productivity tool designed to
+						block those time-wasting sites that can suck the life out of your working day.
 						All you need to do is specify which sites to block and when to block them.<br><br>
-						ivBlock was forked from <a href="https://www.proginosko.com/leechblock/"
-							target="_blank">LeechBlock NG</a>.
 					</p>
 					<p><strong>Version:</strong> <span id="version">?<span></p>
 					<p><strong>License:</strong> <a href="http://www.mozilla.org/MPL/2.0/" target="_blank">Mozilla
 							Public License 2.0</a></p>
 					<p><strong>Author:</strong> Michael H&uuml;lsen</p>
-					<p><strong>Contributors:</strong> James Anderson (LeechBlock NG codebase)</p>
+					<p><strong>Contributors:</strong> James Anderson<br>
+                    (ivBlock was forked from <a href="https://www.proginosko.com/leechblock/"
+                        target="_blank">LeechBlockNG</a>)
 					<p><strong>Documentation:</strong>
 						<a href="https://www.incuvolve.de/ivblock/documentation/"
 							target="_blank">https://www.incuvolve.de/ivblock/documentation/</a>
@@ -780,13 +779,13 @@
 						<a href="https://www.ko-fi.com/MichaelHuelsen"
 							target="_blank">https://www.ko-fi.com/MichaelHuelsen</a>
 					</p>
-					<p><button id="openDiagnostics" type="button">Open Diagnostics Page</button></p>
+					<p class="button-group"><button id="openDiagnostics" type="button" class="ivblock-button default">Open Diagnostics Page</button></p>
 				</div>
 			</div>
 
-			<p style="text-align: center;">
-				<button id="saveOptions" type="button">Save Options</button>
-				<button id="saveOptionsClose" type="button">Save Options &amp; Close</button>
+			<p class="button-group">
+				<button id="saveOptions" type="button" class="ivblock-button">Save Options</button>
+				<button id="saveOptionsClose" type="button" class="ivblock-button">Save Options &amp; Close</button>
 			</p>
 
 		</form>

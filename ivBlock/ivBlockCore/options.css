@@ -1,6 +1,80 @@
 
 /* ivBlock options style */
 
+/* New styles for button alignment and sizing */
+.button-group {
+    text-align: center; /* Center buttons within this group */
+    margin-top: 10px; /* Add some vertical spacing */
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    margin: 5px; /* Spacing between buttons */
+    display: inline-block; /* Allow buttons to sit next to each other and be centered */
+}
+
+/* General button styling for smoother sizing */
+.ivblock-button {
+    /* Font */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1em; /* Base font size for buttons */
+    font-weight: 500; /* Medium weight often used in iOS */
+
+    /* Sizing */
+    padding: 0.8em 1.2em; /* Use em for smoother sizing relative to font-size */
+    min-width: 120px; /* Minimum width for consistency */
+    max-width: 200px; /* Maximum width to prevent excessive growth */
+    width: 100%; /* Allow it to take full width if content is small, but constrained by max-width */
+
+    /* Appearance */
+    background-color: #007AFF; /* iOS blue for primary action, or a light gray for default */
+    color: #FFFFFF; /* White text for primary blue button */
+    border: none; /* No border for a cleaner look */
+    border-radius: 10px; /* More rounded corners for iOS feel */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; /* Smooth transitions */
+    -webkit-appearance: none; /* Remove default button styles for consistency */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Default button style (e.g., for secondary actions) */
+.ivblock-button.default {
+    background-color: #EFEFF4; /* Light gray background */
+    color: #000000; /* Dark text */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover/Active states */
+.ivblock-button:hover:enabled {
+    background-color: #005BBF; /* Darker blue on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.ivblock-button.default:hover:enabled {
+    background-color: #DFDFE4; /* Darker gray on hover */
+}
+
+.ivblock-button:active:enabled {
+    background-color: #003D80; /* Even darker blue on active */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px); /* Slight press effect */
+}
+
+.ivblock-button.default:active:enabled {
+    background-color: #CFCFD4; /* Even darker gray on active */
+}
+
+/* Disabled state */
+.ivblock-button:disabled {
+    background-color: #A9A9A9; /* Lighter gray for disabled */
+    color: #FFFFFF;
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
 *,
 *::before,
 *::after {
@@ -50,26 +124,12 @@ body {
 }
 
 .ui-widget button {
-	padding: 10px 15px;
-	background: #eee;
-	color: #333;
-	border: 1px solid #888;
-	border-radius: 3px;
-	cursor: pointer;
-}
-
-.ui-widget button:hover:enabled {
-	background: #ddd;
-}
-
-.ui-widget button:active:enabled {
-	background: #ccc;
-}
-
-.ui-widget button:disabled {
-	background: #eee;
-	color: #666;
-	border: 1px solid #ccc;
+    padding: 0.8em 1.2em; /* Fallback padding */
+    background: transparent; /* Let ivblock-button define background */
+    color: inherit; /* Let ivblock-button define color */
+    border: none; /* Let ivblock-button define border */
+    border-radius: 3px; /* Will be overridden by ivblock-button */
+    cursor: pointer;
 }
 
 .ui-widget fieldset,
@@ -229,6 +289,14 @@ textarea {
 		padding: 0;
 		margin: 0;
 	}
+
+    .ui-dialog .ui-dialog-buttonpane button {
+        margin: 5px;
+        width: auto; /* Let ivblock-button min-width handle it, or set a max-width */
+        max-width: 120px; /* Example: constrain width on small screens */
+        padding: 0.8em 1.2em; /* Consistent padding */
+        border-radius: 8px; /* Slightly less rounded for dialogs on small screens */
+    }
 }
 
 .ui-dialog {
@@ -237,7 +305,8 @@ textarea {
 }
 
 #saveOptions, #saveOptionsClose {
-	padding: 10px 15px;
+	/* These will now be styled by .ivblock-button and .button-group */
+    /* Remove explicit padding here if .ivblock-button is sufficient */
 }
 
 /* Stats page */
@@ -280,4 +349,22 @@ textarea {
 
 #restartAll {
 	margin-top: 16px;
+}
+
+.nowrap-item {
+    white-space: nowrap;
+    text-align: left; /* Align text to the left within each grid item */
+    margin: 0; /* Remove margin as gap will handle spacing */
+    display: flex; /* Use flex to align checkbox and label */
+    align-items: center; /* Vertically align checkbox and label */
+    justify-self: start; /* Left-align the item within its grid cell */
+}
+
+#days1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 10px 20px; /* Vertical and horizontal spacing */
+    max-width: 300px; /* Limit the overall width of the grid for better appearance */
+    margin: 0 auto; /* Center the grid itself */
+    justify-content: center; /* Center the grid items if they don't fill the max-width */
 }

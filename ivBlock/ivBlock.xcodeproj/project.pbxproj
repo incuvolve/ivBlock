@@ -208,7 +208,7 @@
 		867FBC242E1B31640090CAFD /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../ivBlock/ivBlockCore/fonts; sourceTree = "<group>"; };
 		867FBC252E1B31640090CAFD /* blocked.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = blocked.html; path = ../../ivBlock/ivBlockCore/blocked.html; sourceTree = "<group>"; };
 		867FBC262E1B31640090CAFD /* themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = themes; path = ../../ivBlock/ivBlockCore/themes; sourceTree = "<group>"; };
-		867FBC272E1B31640090CAFD /* options.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = options.css; path = ../../ivBlock/ivBlockCore/options.css; sourceTree = "<group>"; };
+		867FBC272E1B31640090CAFD /* options.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = options.css; path = ../ivBlockCore/options.css; sourceTree = "<group>"; };
 		867FBC282E1B31640090CAFD /* stats.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = stats.js; path = ../../ivBlock/ivBlockCore/stats.js; sourceTree = "<group>"; };
 		867FBC292E1B31640090CAFD /* jquery-ui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "jquery-ui"; path = "../../ivBlock/ivBlockCore/jquery-ui"; sourceTree = "<group>"; };
 		867FBC2A2E1B31640090CAFD /* password.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = password.html; path = ../../ivBlock/ivBlockCore/password.html; sourceTree = "<group>"; };
@@ -368,8 +368,8 @@
 				867FBC0C2E1B31640090CAFD /* lockdown.html */,
 				867FBC1B2E1B31640090CAFD /* lockdown.js */,
 				867FBC1A2E1B31640090CAFD /* manifest.json */,
-				867FBC272E1B31640090CAFD /* options.css */,
 				867FBC172E1B31640090CAFD /* override.js */,
+				867FBC272E1B31640090CAFD /* options.css */,
 				867FBC1D2E1B31640090CAFD /* options.html */,
 				867FBC0F2E1B31640090CAFD /* options.js */,
 				86B3A1B52EBE5AE200431451 /* override.css */,

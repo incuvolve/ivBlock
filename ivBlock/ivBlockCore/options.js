@@ -902,13 +902,36 @@ function applyImportOptions(options) {
 
 // Download blob file
 //
-function downloadBlobFile(blob, filename) {
-	const displayBlob = new Blob([blob], { type: "text/plain" });
-	const url = URL.createObjectURL(displayBlob);
-	window.open(url);
-	setTimeout(function () {
-		URL.revokeObjectURL(url);
-	}, 100);
+function downloadBlobFile(blob, filename, downloadToDisk) {
+	if (downloadToDisk) {
+		log("Attempting to trigger direct download for: " + filename);
+
+		let blobToDownload = blob;
+		// For Safari, if the blob is JSON, try to force download by changing type to octet-stream
+		if (blob.type === "application/json") {
+			log("JSON blob detected. Attempting to force download by changing type to application/octet-stream.");
+			blobToDownload = new Blob([blob], { type: "application/octet-stream", endings: "native" });
+		}
+
+		const url = URL.createObjectURL(blobToDownload); // Use URL.createObjectURL with potentially modified blob
+		const newWindow = window.open(url); // Open in new tab
+		if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+			warn("Pop-up blocker might have prevented opening new tab for: " + filename);
+			$("#alertExportError").dialog("open"); // Show an alert if pop-up is blocked
+		} else {
+			log("New tab opened for: " + filename);
+		}
+		setTimeout(function () {
+			URL.revokeObjectURL(url); // Revoke URL after a short delay
+		}, 100);
+	} else {
+		const displayBlob = new Blob([blob], { type: "text/plain" });
+		const url = URL.createObjectURL(displayBlob);
+		window.open(url);
+		setTimeout(function () {
+			URL.revokeObjectURL(url);
+		}, 100);
+	}
 }
 
 
@@ -935,8 +958,9 @@ function exportOptions() {
 	let blob = new Blob(lines, { type: "application/octet-stream", endings: "native" });
 	let filename = DEFAULT_OPTIONS_FILE.replace("#", getTimestampSuffix());
 	log("Trying to download " + filename);
+	let downloadToFile = getElement("downloadToFile").checked;
 	try {
-		downloadBlobFile(blob, filename);
+		downloadBlobFile(blob, filename, downloadToFile);
 	}
 	catch (e) {
 		warn("Cannot download blob file: " + e);
@@ -1025,7 +1049,8 @@ function exportOptionsJSON() {
 	// Create blob and download it
 	let blob = new Blob([json], { type: "application/json", endings: "native" });
 	let filename = DEFAULT_JSON_FILE.replace("#", getTimestampSuffix());
-	downloadBlobFile(blob, filename);
+	let downloadToFile = getElement("downloadToFile").checked;
+	downloadBlobFile(blob, filename, downloadToFile);
 
 	$("#alertExportSuccess").dialog("open");
 }

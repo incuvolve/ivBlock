@@ -103,10 +103,11 @@
 	"permissions": [
 		"alarms",
 		"menus",
+    "downloads",
 		"storage",
 		"tabs",
 		"unlimitedStorage",
 		"webNavigation"
 	],
-	"version": "1.0.0"
+	"version": "1.0"
 }
