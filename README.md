@@ -19,10 +19,3 @@ Warning: The following keys in your manifest.json are not supported by your curr
 Warning: Persistent background pages are not supported on iOS and iPadOS. You will need to make changes to support a non-persistent background page.
 ```
 
-## Release Workflow
-
-* developments in ivBlockCore submodule are being pushed to integration branch
-* developments and reference to ivBlockCore submodule are pushed to development branch
-* create pull request from dev to main in GitHub, rebase and merge
-* automated deployment to testflight
-* main branch checkout, pull changes and update submodules
