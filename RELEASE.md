@@ -19,9 +19,14 @@ Description of the ivBlock release workflow.
 
 ## development phase
 
-* ivBlockCore (submodule)
-    * create new development branch from integration branch, e.g.
-      dev-1.0.2
+* ivBlockCore (submodule) = forked LeechBlockNG repository
+    * in case there are upstream changes, sync the master branch in
+      GitHub
+    * pull changes on master branch
+    * merge changes from master into integration locally
+    * either create new development branch from integration, or if it
+      has been created before, merge changes from integration to the dev
+      branch. Naming convention: dev-1.0.2
     * push new dev branch to github
 * ivBlock
     * update development branch with commits from main and testing
