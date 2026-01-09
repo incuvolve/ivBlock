@@ -80,3 +80,11 @@ prepare releases for TestFlight:
     * create pull request to testing to update the origin testing branch
 * checkout testing and merge main
 * checkout development and merge testing
+    * create relase tag for commit of release build in GitHub
+      * git tag: v1.0.1
+      * label in GitHub: Version 1.0.1
+    * create release in GitHub
+
+## update local main and development branch
+
+* main branch checkout, pull changes and update submodules
