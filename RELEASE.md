@@ -7,7 +7,11 @@ Description of the ivBlock release workflow.
 * merge recent changes on main back to testing and development branches
 * increment version number 
     * manifest.json in ivBlockCore
-    * in every subproject in Xcode
+    * in every subproject in Xcode in the target sections
+        * iOS App
+        * iOS Extension
+        * Mac App
+        * Mac Extension
 * semantic versioning
     * 1.0.0 -> 2.0.0 for major changes
     * 1.0.0 -> 1.1.0 for minor changes
@@ -33,7 +37,9 @@ Description of the ivBlock release workflow.
 
 prepare releases for TestFlight:
 
-* create a pull request from development to testing in GitHub, rebase and merge
+* ivBlock project
+    * create a pull request from development to testing in GitHub, rebase and merge
+    * submodule from development branch should point to the correct submodule commit (dev-1.0.2 for example)
 * Xcode Cloud workflows
     * testing workflows build latest code from main branch and
       distribute the update on Testflight for iOS and MacOS
