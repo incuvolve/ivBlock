@@ -1055,10 +1055,14 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
 =======
 				MARKETING_VERSION = 1.0.1;
 >>>>>>> 648b140 (incrementing the version number)
+=======
+				MARKETING_VERSION = 1.0.2;
+>>>>>>> f1f7d47 (updated)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1094,10 +1098,14 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
 =======
 				MARKETING_VERSION = 1.0.1;
 >>>>>>> 648b140 (incrementing the version number)
+=======
+				MARKETING_VERSION = 1.0.2;
+>>>>>>> f1f7d47 (updated)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
