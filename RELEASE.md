@@ -65,16 +65,21 @@ prepare releases for TestFlight:
     * assign release build to app version for distribution
 * Submit app for review
 
+
 ## Postprocessing
 
+* Update website
+
+* pull main to local repo
+* tag the release, e.g.
+    * git tag v⒈.0.2
+* push the tag
+    * git push origin tag v1.0.2
 * GitHub
-    * create relase tag for commit of release build in GitHub
-      * git tag: v1.0.1
-      * label in GitHub: Version 1.0.1
-    * create release in GitHub
+    * create release in GitHub pointing to release tag
+    * create pull request to testing to update the origin testing branch
+* checkout testing and merge main
+* checkout development and merge testing
 
-## update local main and development branch
-
-* main branch checkout, pull changes and update submodules
 
 
