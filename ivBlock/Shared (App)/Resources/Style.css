@@ -1,65 +1,111 @@
-* {
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
-    cursor: default;
-}
-
-:root {
-    color-scheme: light dark;
-
-    --spacing: 20px;
-}
-
-html {
-    height: 100%;
-}
-
 body {
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-
-    gap: var(--spacing);
-    margin: 0 calc(var(--spacing) * 2);
-    height: 100%;
-
-    font: -apple-system-short-body;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background for general look */
+    color: #333;
     text-align: center;
 }
 
-body:not(.platform-mac, .platform-ios) :is(.platform-mac, .platform-ios) {
+body.no-js #js-required-message {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
+body:not(.no-js) #js-required-message {
     display: none;
 }
 
-body.platform-ios .platform-mac {
+.container {
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #005f00; /* A pleasant green for the app name */
+    margin-bottom: 20px;
+}
+
+.platform-message {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Hide platform-specific messages by default, show based on state */
+#splash-ios, #splash-mac {
     display: none;
 }
 
-body.platform-mac .platform-ios {
+body.platform-ios #splash-ios {
+    display: block;
+}
+
+body.platform-mac #splash-mac {
+    display: block;
+}
+
+/* State-specific messages for macOS */
+#splash-mac-on-message,
+#splash-mac-off-message {
     display: none;
 }
 
-body.platform-ios .platform-mac {
-    display: none;
+body.state-on #splash-mac-on-message {
+    display: block;
+    color: green;
 }
 
-body:not(.state-on, .state-off) :is(.state-on, .state-off) {
-    display: none;
+body.state-off #splash-mac-off-message {
+    display: block;
+    color: orange;
 }
 
-body.state-on :is(.state-off, .state-unknown) {
-    display: none;
+/* Unknown state for macOS */
+body:not(.state-on):not(.state-off) #splash-mac-unknown-message {
+    display: block;
 }
 
-body.state-off :is(.state-on, .state-unknown) {
-    display: none;
+button.open-preferences {
+    background-color: #007aff; /* Apple-like blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
-body.no-js .js-only {
-    display: none;
+button.open-preferences:hover {
+    background-color: #005ecb;
 }
 
-button {
-    font-size: 1em;
+/* Basic dark mode support - assuming system preference or class on body */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2c2c2c;
+        color: #f0f0f0;
+    }
+    .container {
+        background-color: #3a3a3a;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+        color: #4CAF50; /* A contrasting green for dark mode */
+    }
+    .platform-message {
+        border-color: #555;
+        background-color: #444;
+    }
 }
