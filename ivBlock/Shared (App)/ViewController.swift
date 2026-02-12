@@ -55,6 +55,20 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
             }
         }
         
+        // Inject Script.js content directly
+        if let scriptJSContent = getScriptJSContent() {
+            webView.evaluateJavaScript(scriptJSContent) { (result, error) in
+                if let error = error {
+                    print("Error injecting Script.js content: \(error)")
+                } else {
+                    print("Script.js content injected successfully.")
+                }
+            }
+        } else {
+            print("Failed to get Script.js content, cannot inject.")
+            return
+        }
+        
         let localizedStrings = getLocalizedSplashMessages()
         
         let jsonEncoder = JSONEncoder()
@@ -66,7 +80,13 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
         }
 
 #if os(iOS)
-        webView.evaluateJavaScript("show('ios', null, null, \(jsonString))")
+        webView.evaluateJavaScript("show('ios', null, null, \(jsonString))") { (result, error) in
+            if let error = error {
+                print("Error evaluating JavaScript 'show' function for iOS: \(error)")
+            } else {
+                print("JavaScript 'show' function executed successfully for iOS.")
+            }
+        }
 #elseif os(macOS)
         SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
             guard let state = state, error == nil else {
@@ -76,9 +96,21 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 
             DispatchQueue.main.async {
                 if #available(macOS 13, *) {
-                    webView.evaluateJavaScript("show('mac', \(state.isEnabled), true, \(jsonString))")
+                    webView.evaluateJavaScript("show('mac', \(state.isEnabled), true, \(jsonString))") { (result, error) in
+                        if let error = error {
+                            print("Error evaluating JavaScript 'show' function for macOS (version 13+): \(error)")
+                        } else {
+                            print("JavaScript 'show' function executed successfully for macOS (version 13+).")
+                        }
+                    }
                 } else {
-                    webView.evaluateJavaScript("show('mac', \(state.isEnabled), false, \(jsonString))")
+                    webView.evaluateJavaScript("show('mac', \(state.isEnabled), false, \(jsonString))") { (result, error) in
+                        if let error = error {
+                            print("Error evaluating JavaScript 'show' function for macOS (version <13): \(error)")
+                        } else {
+                            print("JavaScript 'show' function executed successfully for macOS (version <13).")
+                        }
+                    }
                 }
             }
         }
@@ -133,22 +165,37 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
         let safariExtSettingsMacUnknown = NSLocalizedString("safariExtSettingsMacUnknown", tableName: nil, bundle: bundle, value: "", comment: "Instruction for macOS users to enable the extension in Safari Settings Extensions section (initial state).")
         print("safariExtSettingsMacUnknown: \(safariExtSettingsMacUnknown)")
         
-        let quitAndOpenSafariSettings = NSLocalizedString("quitAndOpenSafariSettings", tableName: nil, bundle: bundle, value: "", comment: "Button text to quit the app and open Safari Settings.")
-        print("quitAndOpenSafariSettings: \(quitAndOpenSafariSettings)")
-        
-        return [
-            "jsRequiredMessage": jsRequiredMessage,
-            "safariExtSettingsIOS": safariExtSettingsIOS,
-            "safariExtPrefsMacUnknown": safariExtPrefsMacUnknown,
-            "safariExtPrefsMacOn": safariExtPrefsMacOn,
-            "safariExtPrefsMacOff": safariExtPrefsMacOff,
-            "quitAndOpenSafariExtPrefs": quitAndOpenSafariExtPrefs,
-            "safariExtSettingsMacOn": safariExtSettingsMacOn,
-            "safariExtSettingsMacOff": safariExtSettingsMacOff,
-            "safariExtSettingsMacUnknown": safariExtSettingsMacUnknown,
-            "quitAndOpenSafariSettings": quitAndOpenSafariSettings,
-            "currentLocaleIdentifier": Locale.current.identifier // Add current locale for debugging
-        ]
+                let quitAndOpenSafariSettings = NSLocalizedString("quitAndOpenSafariSettings", tableName: nil, bundle: bundle, value: "", comment: "Button text to quit the app and open Safari Settings.")
+                print("quitAndOpenSafariSettings: \(quitAndOpenSafariSettings)")
+                
+                let extensionName = NSLocalizedString("CFBundleDisplayName", tableName: "InfoPlist", bundle: bundle, value: "ivBlock", comment: "The display name of the application.")
+                print("extensionName: \(extensionName)")
+                
+                return [                    "jsRequiredMessage": jsRequiredMessage,
+                    "safariExtSettingsIOS": safariExtSettingsIOS,
+                    "safariExtPrefsMacUnknown": safariExtPrefsMacUnknown,
+                    "safariExtPrefsMacOn": safariExtPrefsMacOn,
+                    "safariExtPrefsMacOff": safariExtPrefsMacOff,
+                    "quitAndOpenSafariExtPrefs": quitAndOpenSafariExtPrefs,
+                    "safariExtSettingsMacOn": safariExtSettingsMacOn,
+                    "safariExtSettingsMacOff": safariExtSettingsMacOff,
+                    "safariExtSettingsMacUnknown": safariExtSettingsMacUnknown,
+                    "quitAndOpenSafariSettings": quitAndOpenSafariSettings,
+                    "currentLocaleIdentifier": Locale.current.identifier, // Add current locale for debugging
+                    "extensionName": extensionName // Add extension name to localized messages
+                ]    }
+    
+    private func getScriptJSContent() -> String? {
+        guard let scriptURL = Bundle.main.url(forResource: "Script", withExtension: "js") else {
+            print("Error: Script.js not found in bundle.")
+            return nil
+        }
+        do {
+            return try String(contentsOf: scriptURL)
+        } catch {
+            print("Error reading Script.js content: \(error)")
+            return nil
+        }
     }
 
 }
