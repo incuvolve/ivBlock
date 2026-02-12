@@ -1,0 +1,10 @@
+"jsRequiredMessage" = "JavaScript is required to use this application.";
+"safariExtSettingsIOS" = "You can turn on ivBlock’s Safari extension in Settings.";
+"safariExtPrefsMacUnknown" = "You can turn on ivBlock’s extension in Safari Extensions preferences.";
+"safariExtPrefsMacOn" = "ivBlock’s extension is currently on. You can turn it off in Safari Extensions preferences.";
+"safariExtPrefsMacOff" = "ivBlock’s extension is currently off. You can turn it on in Safari Extensions preferences.";
+"quitAndOpenSafariExtPrefs" = "Quit and Open Safari Extensions Preferences…";
+"safariExtSettingsMacOn" = "ivBlock’s extension is currently on. You can turn it off in the Extensions section of Safari Settings.";
+"safariExtSettingsMacOff" = "ivBlock’s extension is currently off. You can turn it on in the Extensions section of Safari Settings.";
+"safariExtSettingsMacUnknown" = "You can turn on ivBlock’s extension in the Extensions section of Safari Settings.";
+"quitAndOpenSafariSettings" = "Quit and Open Safari Settings…";

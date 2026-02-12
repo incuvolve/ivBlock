@@ -1,0 +1,10 @@
+"jsRequiredMessage" = "JavaScript ist erforderlich, um diese Anwendung zu nutzen.";
+"safariExtSettingsIOS" = "Sie können die ivBlock Safari-Erweiterung in den Einstellungen aktivieren.";
+"safariExtPrefsMacUnknown" = "Sie können die ivBlock-Erweiterung in den Safari-Erweiterungseinstellungen aktivieren.";
+"safariExtPrefsMacOn" = "Die ivBlock-Erweiterung ist derzeit aktiviert. Sie können sie in den Safari-Erweiterungseinstellungen deaktivieren.";
+"safariExtPrefsMacOff" = "Die ivBlock-Erweiterung ist derzeit deaktiviert. Sie können sie in den Safari-Erweiterungseinstellungen aktivieren.";
+"quitAndOpenSafariExtPrefs" = "Safari-Erweiterungseinstellungen beenden und öffnen…";
+"safariExtSettingsMacOn" = "Die ivBlock-Erweiterung ist derzeit aktiviert. Sie können sie im Bereich „Erweiterungen“ der Safari-Einstellungen deaktivieren.";
+"safariExtSettingsMacOff" = "Die ivBlock-Erweiterung ist derzeit deaktiviert. Sie können sie im Bereich „Erweiterungen“ der Safari-Einstellungen aktivieren.";
+"safariExtSettingsMacUnknown" = "Sie können die ivBlock-Erweiterung im Bereich „Erweiterungen“ der Safari-Einstellungen aktivieren.";
+"quitAndOpenSafariSettings" = "Safari-Einstellungen beenden und öffnen…";
