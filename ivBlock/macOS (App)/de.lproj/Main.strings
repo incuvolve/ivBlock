@@ -1,0 +1,36 @@
+
+/* Class = "NSMenuItem"; title = "ivBlock"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "ivBlock";
+
+/* Class = "NSMenuItem"; title = "Quit ivBlock"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit ivBlock";
+
+/* Class = "NSMenuItem"; title = "About ivBlock"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About ivBlock";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "ivBlock Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "ivBlock Help";
+
+/* Class = "NSWindow"; title = "ivBlock"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "ivBlock";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Hide ivBlock"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide ivBlock";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenu"; title = "ivBlock"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "ivBlock";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
