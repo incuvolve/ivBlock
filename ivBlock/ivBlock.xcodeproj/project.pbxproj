@@ -1038,7 +1038,11 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> 648b140 (incrementing the version number)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1073,7 +1077,11 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> 648b140 (incrementing the version number)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
