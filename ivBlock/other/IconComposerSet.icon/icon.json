@@ -6,10 +6,20 @@
     {
       "layers" : [
         {
+          "hidden" : false,
+          "image-name" : "ivblockBg 2.png",
+          "name" : "ivblockBg 2"
+        },
+        {
+          "blend-mode" : "normal",
+          "fill" : "none",
+          "glass" : false,
+          "hidden" : true,
           "image-name" : "ivblockBgTransparent.png",
           "name" : "ivblockBgTransparent"
         }
       ],
+      "name" : "Group",
       "shadow" : {
         "kind" : "neutral",
         "opacity" : 0.5
