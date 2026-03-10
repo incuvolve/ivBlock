@@ -6,6 +6,7 @@
     {
       "layers" : [
         {
+<<<<<<< HEAD
           "hidden" : false,
           "image-name" : "ivblockBg 2.png",
           "name" : "ivblockBg 2"
@@ -15,11 +16,16 @@
           "fill" : "none",
           "glass" : false,
           "hidden" : true,
+=======
+>>>>>>> 7919748 (1.0.3 first beta (#77))
           "image-name" : "ivblockBgTransparent.png",
           "name" : "ivblockBgTransparent"
         }
       ],
+<<<<<<< HEAD
       "name" : "Group",
+=======
+>>>>>>> 7919748 (1.0.3 first beta (#77))
       "shadow" : {
         "kind" : "neutral",
         "opacity" : 0.5
