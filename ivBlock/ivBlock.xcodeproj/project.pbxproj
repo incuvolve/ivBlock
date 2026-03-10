@@ -881,7 +881,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> e48a32f (updating version numbers of subprojects)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -915,7 +919,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> e48a32f (updating version numbers of subprojects)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -956,7 +964,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> e48a32f (updating version numbers of subprojects)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -997,7 +1009,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> e48a32f (updating version numbers of subprojects)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1120,7 +1136,11 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> e48a32f (updating version numbers of subprojects)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1161,7 +1181,11 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
+=======
+				MARKETING_VERSION = 1.0.1;
+>>>>>>> e48a32f (updating version numbers of subprojects)
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
