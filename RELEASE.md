@@ -80,6 +80,3 @@ prepare releases for TestFlight:
     * create pull request to testing to update the origin testing branch
 * checkout testing and merge main
 * checkout development and merge testing
-
-
-
