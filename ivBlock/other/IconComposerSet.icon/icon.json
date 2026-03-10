@@ -1,65 +1,29 @@
 {
-  "fill" : {
-    "automatic-gradient" : "extended-gray:1.00000,1.00000"
+  "fill": {
+    "automatic-gradient": "extended-gray:1.00000,1.00000"
   },
-  "groups" : [
+  "groups": [
     {
-      "layers" : [
+      "layers": [
         {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1154051 (updated)
->>>>>>> development
-          "hidden" : false,
-          "image-name" : "ivblockBg 2.png",
-          "name" : "ivblockBg 2"
-        },
-        {
-          "blend-mode" : "normal",
-          "fill" : "none",
-          "glass" : false,
-          "hidden" : true,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 7919748 (1.0.3 first beta (#77))
-=======
->>>>>>> 1154051 (updated)
->>>>>>> development
-          "image-name" : "ivblockBgTransparent.png",
-          "name" : "ivblockBgTransparent"
+          "hidden": true,
+          "image-name": "ivblockBgTransparent.png",
+          "name": "ivblockBgTransparent"
         }
       ],
-<<<<<<< HEAD
-      "name" : "Group",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "name" : "Group",
-=======
->>>>>>> 7919748 (1.0.3 first beta (#77))
-=======
-      "name" : "Group",
->>>>>>> 1154051 (updated)
->>>>>>> development
-      "shadow" : {
-        "kind" : "neutral",
-        "opacity" : 0.5
+      "name": "Group",
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.5
       },
-      "translucency" : {
-        "enabled" : true,
-        "value" : 0.5
+      "translucency": {
+        "enabled": true,
+        "value": 0.5
       }
     }
   ],
-  "supported-platforms" : {
-    "circles" : [
-      "watchOS"
-    ],
-    "squares" : "shared"
+  "supported-platforms": {
+    "circles": ["watchOS"],
+    "squares": "shared"
   }
 }
