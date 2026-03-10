@@ -354,17 +354,6 @@
 		867FBC002E1B31640090CAFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-				86463AD42F3E190E00A0B331 /* i18n-polyfill.js */,
-=======
->>>>>>> 7f17dcb (Revert "work in progress")
-				863FC9792ECD2BD30017989D /* buttons.css */,
->>>>>>> 3776c7f (work in progress)
-=======
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				867FBC202E1B31640090CAFD /* _locales */,
 				867FBC132E1B31640090CAFD /* add-sites.html */,
 				867FBC072E1B31640090CAFD /* add-sites.js */,
@@ -892,23 +881,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> e48a32f (updating version numbers of subprojects)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -942,23 +915,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> e48a32f (updating version numbers of subprojects)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -999,23 +956,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> e48a32f (updating version numbers of subprojects)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1056,23 +997,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> e48a32f (updating version numbers of subprojects)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1113,27 +1038,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> 648b140 (incrementing the version number)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> f1f7d47 (updated)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1168,27 +1073,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> 648b140 (incrementing the version number)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> f1f7d47 (updated)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1227,23 +1112,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> e48a32f (updating version numbers of subprojects)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1284,23 +1153,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0.3;
-=======
-				MARKETING_VERSION = 1.0.1;
->>>>>>> e48a32f (updating version numbers of subprojects)
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> 3776c7f (work in progress)
-=======
-				MARKETING_VERSION = 1.0.2;
->>>>>>> 7f17dcb (Revert "work in progress")
-=======
-				MARKETING_VERSION = 1.0.3;
->>>>>>> b87cce0 (First beta testing of 1.0.3 (#76))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
