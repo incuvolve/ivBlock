@@ -6,6 +6,13 @@
     {
       "layers" : [
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1154051 (updated)
+>>>>>>> development
           "hidden" : false,
           "image-name" : "ivblockBg 2.png",
           "name" : "ivblockBg 2"
@@ -15,11 +22,30 @@
           "fill" : "none",
           "glass" : false,
           "hidden" : true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7919748 (1.0.3 first beta (#77))
+=======
+>>>>>>> 1154051 (updated)
+>>>>>>> development
           "image-name" : "ivblockBgTransparent.png",
           "name" : "ivblockBgTransparent"
         }
       ],
+<<<<<<< HEAD
       "name" : "Group",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "name" : "Group",
+=======
+>>>>>>> 7919748 (1.0.3 first beta (#77))
+=======
+      "name" : "Group",
+>>>>>>> 1154051 (updated)
+>>>>>>> development
       "shadow" : {
         "kind" : "neutral",
         "opacity" : 0.5
