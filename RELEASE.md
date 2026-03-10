@@ -33,7 +33,7 @@ Description of the ivBlock release workflow.
     * work on development branch
     * as soon as modifications in ivBlockCore are made, push changes to ivBlock repository as well (references to submodule to most recent commit)
 
-## testing phase
+## first testing phase
 
 prepare releases for TestFlight:
 
@@ -44,28 +44,42 @@ prepare releases for TestFlight:
     * testing workflows build latest code from main branch and
       distribute the update on Testflight for iOS and MacOS
 
+
 ## prepare releeases for distribution in App Store Connect
 
-* create a pull request from testing to main in GitHub, create merge
-  commit
+* Core Module
+    * merge development branch of submodule into integration branch
+    * push integration branch to github
+
+* main repository
+    * create a pull request from testing to main in GitHub, create merge commit
+    * now main branch points to the correct commit from the submodule
 * Xcode Cloud Workflows
     * manually trigger the Release Candidate workflows for iOS / MacOS
 * AppStore Connect
     * create new versions with correct version number for iOS and MacOS
       version
+    * add description for changes in German and English
+    * add screenshots
+    * add promotional text
     * assign release build to app version for distribution
 * Submit app for review
 
+
 ## Postprocessing
 
+* Update website
+
+* pull main to local repo
+* tag the release, e.g.
+    * git tag v⒈.0.2
+* push the tag
+    * git push origin tag v1.0.2
 * GitHub
-    * create relase tag for commit of release build in GitHub
-      * git tag: v1.0.1
-      * label in GitHub: Version 1.0.1
-    * create release in GitHub
+    * create release in GitHub pointing to release tag
+    * create pull request to testing to update the origin testing branch
+* checkout testing and merge main
+* checkout development and merge testing
 
-## update local main and development branch
-
-* main branch checkout, pull changes and update submodules
 
 
