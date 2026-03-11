@@ -49,8 +49,8 @@ prepare releases for TestFlight:
 
 * Core Module
     * merge development branch of submodule into integration branch
+    * update Version-ivBlock.md in integration branch
     * push integration branch to github
-
 * main repository
     * create a pull request from testing to main in GitHub, create merge commit
     * now main branch points to the correct commit from the submodule
