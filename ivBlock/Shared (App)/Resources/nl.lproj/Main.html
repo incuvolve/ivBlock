@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+</head>
+<body class="no-js">
+    <div class="js-only">
+        <img src="../Icon.png" width="128" height="128" alt="ivBlock Icon">
+        <p id="msg-ios" class="platform-ios">U kunt de Safari-extensie van ivBlock inschakelen via Instellingen.</p>
+        <p id="msg-mac-unknown" class="platform-mac state-unknown">U kunt de ivBlock-extensie inschakelen via de Safari-extensievoorkeuren.</p>
+        <p id="msg-mac-on" class="platform-mac state-on">De ivBlock-extensie is momenteel ingeschakeld. U kunt deze uitschakelen via de Safari-extensievoorkeuren.</p>
+        <p id="msg-mac-off" class="platform-mac state-off">De ivBlock-extensie is momenteel uitgeschakeld. U kunt deze inschakelen via de Safari-extensievoorkeuren.</p>
+        <button id="btn-open-prefs" class="platform-mac open-preferences">Afsluiten en Safari-extensievoorkeuren openen…</button>
+        <!-- macOS 13+ Settings variants — read by Script.js, not displayed directly -->
+        <span id="str-mac-unknown-settings" hidden>U kunt de ivBlock-extensie inschakelen in het gedeelte Extensies van Safari-instellingen.</span>
+        <span id="str-mac-on-settings" hidden>De ivBlock-extensie is momenteel ingeschakeld. U kunt deze uitschakelen in het gedeelte Extensies van Safari-instellingen.</span>
+        <span id="str-mac-off-settings" hidden>De ivBlock-extensie is momenteel uitgeschakeld. U kunt deze inschakelen in het gedeelte Extensies van Safari-instellingen.</span>
+        <span id="str-open-settings" hidden>Afsluiten en Safari-instellingen openen…</span>
+    </div>
+    <noscript>
+        <p>JavaScript is vereist om deze applicatie te gebruiken.</p>
+    </noscript>
+</body>
+</html>
