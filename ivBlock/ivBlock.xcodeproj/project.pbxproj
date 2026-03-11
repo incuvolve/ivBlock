@@ -159,6 +159,11 @@
 		863FC9792ECD2BD30017989D /* buttons.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = buttons.css; path = ivBlockCore/buttons.css; sourceTree = SOURCE_ROOT; };
 		867FBBA62E1B31620090CAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		867FBBA6DE000000000000DE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/Main.html; sourceTree = "<group>"; };
+		867FBBA6E5000000000000E5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/Main.html; sourceTree = "<group>"; };
+		867FBBA6EF000000000000EF /* he */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = he; path = he.lproj/Main.html; sourceTree = "<group>"; };
+		867FBBA6F000000000000F00 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = it; path = it.lproj/Main.html; sourceTree = "<group>"; };
+		867FBBA6F100000000000F10 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = pt; path = pt.lproj/Main.html; sourceTree = "<group>"; };
+		867FBBA6F200000000000F20 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = vi; path = vi.lproj/Main.html; sourceTree = "<group>"; };
 		867FBBA72E1B31620090CAFD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		867FBBA82E1B31620090CAFD /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		867FBBA92E1B31620090CAFD /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
@@ -512,6 +517,11 @@
 				en,
 				Base,
 				de,
+				es,
+				he,
+				it,
+				pt,
+				vi,
 			);
 			mainGroup = 867FBB9E2E1B31620090CAFD;
 			minimizedProjectReferenceProxies = 1;
@@ -711,6 +721,11 @@
 			children = (
 				867FBBA62E1B31620090CAFD /* Base */,
 				867FBBA6DE000000000000DE /* de */,
+				867FBBA6E5000000000000E5 /* es */,
+				867FBBA6EF000000000000EF /* he */,
+				867FBBA6F000000000000F00 /* it */,
+				867FBBA6F100000000000F10 /* pt */,
+				867FBBA6F200000000000F20 /* vi */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";

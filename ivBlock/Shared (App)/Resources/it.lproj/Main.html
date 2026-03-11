@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+</head>
+<body class="no-js">
+    <div class="js-only">
+        <img src="../Icon.png" width="128" height="128" alt="ivBlock Icon">
+        <p id="msg-ios" class="platform-ios">Puoi attivare l’estensione Safari di ivBlock nelle Impostazioni.</p>
+        <p id="msg-mac-unknown" class="platform-mac state-unknown">Puoi attivare l’estensione di ivBlock nelle preferenze delle estensioni di Safari.</p>
+        <p id="msg-mac-on" class="platform-mac state-on">L’estensione di ivBlock è attualmente attiva. Puoi disattivarla nelle preferenze delle estensioni di Safari.</p>
+        <p id="msg-mac-off" class="platform-mac state-off">L’estensione di ivBlock è attualmente inattiva. Puoi attivarla nelle preferenze delle estensioni di Safari.</p>
+        <button id="btn-open-prefs" class="platform-mac open-preferences">Esci e apri le preferenze delle estensioni di Safari…</button>
+        <!-- macOS 13+ Settings variants — read by Script.js, not displayed directly -->
+        <span id="str-mac-unknown-settings" hidden>Puoi attivare l’estensione di ivBlock nella sezione Estensioni delle impostazioni di Safari.</span>
+        <span id="str-mac-on-settings" hidden>L’estensione di ivBlock è attualmente attiva. Puoi disattivarla nella sezione Estensioni delle impostazioni di Safari.</span>
+        <span id="str-mac-off-settings" hidden>L’estensione di ivBlock è attualmente inattiva. Puoi attivarla nella sezione Estensioni delle impostazioni di Safari.</span>
+        <span id="str-open-settings" hidden>Esci e apri le impostazioni di Safari…</span>
+    </div>
+    <noscript>
+        <p>JavaScript è necessario per usare questa applicazione.</p>
+    </noscript>
+</body>
+</html>

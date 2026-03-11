@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+</head>
+<body class="no-js">
+    <div class="js-only">
+        <img src="../Icon.png" width="128" height="128" alt="ivBlock Icon">
+        <p id="msg-ios" class="platform-ios">You can turn on ivBlock’s Safari extension in Settings.</p>
+        <p id="msg-mac-unknown" class="platform-mac state-unknown">You can turn on ivBlock’s extension in Safari Extensions preferences.</p>
+        <p id="msg-mac-on" class="platform-mac state-on">ivBlock’s extension is currently on. You can turn it off in Safari Extensions preferences.</p>
+        <p id="msg-mac-off" class="platform-mac state-off">ivBlock’s extension is currently off. You can turn it on in Safari Extensions preferences.</p>
+        <button id="btn-open-prefs" class="platform-mac open-preferences">Quit and Open Safari Extensions Preferences…</button>
+        <!-- macOS 13+ Settings variants — read by Script.js, not displayed directly -->
+        <span id="str-mac-unknown-settings" hidden>You can turn on ivBlock’s extension in the Extensions section of Safari Settings.</span>
+        <span id="str-mac-on-settings" hidden>ivBlock’s extension is currently on. You can turn it off in the Extensions section of Safari Settings.</span>
+        <span id="str-mac-off-settings" hidden>ivBlock’s extension is currently off. You can turn it on in the Extensions section of Safari Settings.</span>
+        <span id="str-open-settings" hidden>Quit and Open Safari Settings…</span>
+    </div>
+    <noscript>
+        <p>JavaScript is required to use this application.</p>
+    </noscript>
+</body>
+</html>
