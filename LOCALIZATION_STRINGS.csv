@@ -1,0 +1,221 @@
+File,Element Type,String,HTML?,ID/Context,Suggested Key,Priority
+options.html,page title,ivBlock Options,No,-,pageTitle_options,HIGH
+options.html,tab label,Block Set 1,No,blockSetName1,blockSetLabel_1,HIGH
+options.html,tab label,General,No,tabGeneral,tabLabel_general,HIGH
+options.html,tab label,About,No,tabAbout,tabLabel_about,HIGH
+options.html,button,← Move Set,No,moveSetL1,moveSetLeft,HIGH
+options.html,button,Show Simplified Options,No,simpOpts1,showSimplifiedOptions,HIGH
+options.html,button,Show Full Options,No,fullOpts1,showFullOptions,HIGH
+options.html,button,Move Set →,No,moveSetR1,moveSetRight,HIGH
+options.html,legend,What to Block,No,-,legend_whatToBlock,HIGH
+options.html,instruction,In this section specify the sites you want to block.,No,-,instruction_specifySites,MEDIUM
+options.html,label,Enter a custom name for this block set (optional):,No,-,label_customBlockSetName,MEDIUM
+options.html,label,Enter the domain names of the sites to block (one item per line):,No,-,label_enterDomainNames,MEDIUM
+options.html,placeholder,somesite.com,No,sites1,placeholder_domainName,MEDIUM
+options.html,note,Note: Do not include URL protocol prefixes such as http:// or file://.,No,-,note_noProtocolPrefixes,MEDIUM
+options.html,tip,Tip: Use * or ** as wildcard + to prefix exceptions > to prefix referrers and ~ to prefix keywords.,Yes,-,tip_wildcardExceptions,MEDIUM
+options.html,legend,When to Block,No,-,legend_whenToBlock,HIGH
+options.html,instruction,In this section specify when you want to block these sites.,No,-,instruction_specifyWhen,MEDIUM
+options.html,label,Enter the time periods within which to block these sites (optional):,No,-,label_timePeriods,MEDIUM
+options.html,option,5 minutes,No,limitPeriod1,option_5minutes,HIGH
+options.html,option,10 minutes,No,limitPeriod1,option_10minutes,HIGH
+options.html,option,15 minutes,No,limitPeriod1,option_15minutes,HIGH
+options.html,option,20 minutes,No,limitPeriod1,option_20minutes,HIGH
+options.html,option,half-hour (30 minutes),No,limitPeriod1,option_halfHour,HIGH
+options.html,option,hour (60 minutes),No,limitPeriod1,option_1hour,HIGH
+options.html,option,1.5 hours (90 minutes),No,limitPeriod1,option_1_5hours,HIGH
+options.html,option,2 hours,No,limitPeriod1,option_2hours,HIGH
+options.html,option,3 hours,No,limitPeriod1,option_3hours,HIGH
+options.html,option,4 hours,No,limitPeriod1,option_4hours,HIGH
+options.html,option,6 hours,No,limitPeriod1,option_6hours,HIGH
+options.html,option,8 hours,No,limitPeriod1,option_8hours,HIGH
+options.html,option,half-day (12 hours),No,limitPeriod1,option_halfDay,HIGH
+options.html,option,day (24 hours),No,limitPeriod1,option_1day,HIGH
+options.html,option,2 days,No,limitPeriod1,option_2days,HIGH
+options.html,option,3 days,No,limitPeriod1,option_3days,HIGH
+options.html,option,4 days,No,limitPeriod1,option_4days,HIGH
+options.html,option,week (7 days),No,limitPeriod1,option_1week,HIGH
+options.html,option,2 weeks (14 days),No,limitPeriod1,option_2weeks,HIGH
+options.html,option,1 month (30 days),No,limitPeriod1,option_1month,HIGH
+options.html,option,2 months (60 days),No,limitPeriod1,option_2months,HIGH
+options.html,option,3 months (90 days),No,limitPeriod1,option_3months,HIGH
+options.html,label,Roll over unused time,No,rollover1,label_rolloverUnusedTime,MEDIUM
+options.html,label,Count time spent on these sites only when browser tab is active,No,countFocus1,label_countTimeWhenActive,MEDIUM
+options.html,label,Count time spent on these sites only when browser tab is playing audio,No,countAudio1,label_countTimeAudioOnly,MEDIUM
+options.html,label,Select when to block these sites:,No,-,label_selectWhenToBlock,MEDIUM
+options.html,option,within time periods OR after time limit,No,conjMode1,option_timePeriodsOr,HIGH
+options.html,option,within time periods AND after time limit,No,conjMode1,option_timePeriodsAnd,HIGH
+options.html,label,Select the days on which to block these sites:,No,-,label_selectDays,HIGH
+options.html,checkbox label,Sunday,No,day01,dayName_sunday,HIGH
+options.html,checkbox label,Monday,No,day11,dayName_monday,HIGH
+options.html,checkbox label,Tuesday,No,day21,dayName_tuesday,HIGH
+options.html,checkbox label,Wednesday,No,day31,dayName_wednesday,HIGH
+options.html,checkbox label,Thursday,No,day41,dayName_thursday,HIGH
+options.html,checkbox label,Friday,No,day51,dayName_friday,HIGH
+options.html,checkbox label,Saturday,No,day61,dayName_saturday,HIGH
+options.html,legend,How to Block,No,-,legend_howToBlock,HIGH
+options.html,button,All Day,No,allDay1,buttonLabel_allDay,HIGH
+options.html,button,Default Page,No,defaultPage1,button_defaultPage,HIGH
+options.html,button,Delaying Page,No,delayingPage1,button_delayingPage,HIGH
+options.html,button,Password Page,No,passwordPage1,button_passwordPage,HIGH
+options.html,button,Blank Page,No,blankPage1,button_blankPage,HIGH
+options.html,option,blur (1px),No,filterName1,filter_blur1px,MEDIUM
+options.html,option,blur (2px),No,filterName1,filter_blur2px,MEDIUM
+options.html,option,blur (4px),No,filterName1,filter_blur4px,MEDIUM
+options.html,option,blur (8px),No,filterName1,filter_blur8px,MEDIUM
+options.html,option,blur (16px),No,filterName1,filter_blur16px,MEDIUM
+options.html,option,blur (32px),No,filterName1,filter_blur32px,MEDIUM
+options.html,option,fade (80%),No,filterName1,filter_fade80,MEDIUM
+options.html,option,fade (90%),No,filterName1,filter_fade90,MEDIUM
+options.html,option,fade (100%),No,filterName1,filter_fade100,MEDIUM
+options.html,option,grayscale,No,filterName1,filter_grayscale,MEDIUM
+options.html,option,invert,No,filterName1,filter_invert,MEDIUM
+options.html,option,sepia,No,filterName1,filter_sepia,MEDIUM
+options.html,option,custom,No,filterName1,filter_custom,MEDIUM
+options.html,label,Apply filter instead of blocking page:,No,applyFilter1,label_applyFilter,MEDIUM
+options.html,label,Mute tab with filter,No,filterMute1,label_muteTabFilter,MEDIUM
+options.html,label,Close tab instead of blocking page,No,closeTab1,label_closeTab,MEDIUM
+options.html,label,Immediately block pages on these sites once blocking conditions are met,No,activeBlock1,label_immediateBlock,MEDIUM
+options.html,label,Show matched keyword on blocking page,No,showKeyword1,label_showKeyword,MEDIUM
+options.html,label,Check for keywords only in page title,No,titleOnly1,label_keywordTitleOnly,MEDIUM
+options.html,option,site,No,delayFirstMode1,option_site,MEDIUM
+options.html,option,block set,No,delayFirstMode1,option_blockSet,MEDIUM
+options.html,label,Add blocked page to browser history,No,addHistory1,label_addToHistory,MEDIUM
+options.html,label,Allow temporary override for these sites,No,allowOverride1,label_allowOverride,HIGH
+options.html,label,Allow temporary override during lockdown,No,allowOverLock1,label_allowOverrideLockdown,MEDIUM
+options.html,button,Reset Options to Defaults,No,resetOpts1,button_resetOptionsDefaults,HIGH
+options.html,button,Show Advanced Options,No,showAdvOpts1,button_showAdvancedOptions,HIGH
+options.html,legend,Advanced Options,No,-,legend_advancedOptions,HIGH
+options.html,label,Disable this block set (for debugging purposes),No,disable1,label_debugDisable,MEDIUM
+options.html,label,Show countdown timer for this block set,No,showTimer1,label_showCountdownTimer,MEDIUM
+options.html,label,Treat referrers as allow-conditions rather than block-conditions,No,allowRefers1,label_referrersAsAllowConditions,MEDIUM
+options.html,label,Treat keywords as allow-conditions rather than block-conditions,No,allowKeywords1,label_keywordsAsAllowConditions,MEDIUM
+options.html,button,Clear,No,clearRegExpBlock1,button_clear,MEDIUM
+options.html,button,Generate From Site List,No,genRegExpBlock1,button_generateFromSiteList,MEDIUM
+options.html,button,Cancel Active Lockdown,No,cancelLockdown1,button_cancelActiveLockdown,HIGH
+options.html,legend,Block Sets,No,-,legend_blockSets,HIGH
+options.html,legend,Access Control,No,-,legend_accessControl,HIGH
+options.html,option,Don't require the user to enter any password or access code,No,optionsAccess,option_noPassword,HIGH
+options.html,option,Require the user to enter a password,No,optionsAccess,option_passwordRequired,HIGH
+options.html,option,Require the user to enter a random 32-character access code,No,optionsAccess,option_code32,HIGH
+options.html,option,Require the user to enter a random 64-character access code,No,optionsAccess,option_code64,HIGH
+options.html,option,Require the user to enter a random 128-character access code,No,optionsAccess,option_code128,HIGH
+options.html,label,Password:,No,-,label_password,MEDIUM
+options.html,label,Show password,No,accessPasswordShow,label_showPassword,MEDIUM
+options.html,label,Hide password characters when entered at prompt,No,hidePassword,label_hidePasswordChars,MEDIUM
+options.html,legend,Countdown Timer,No,-,legend_countdownTimer,HIGH
+options.html,label,Show timer over page,No,timerVisible,label_showTimerOverPage,MEDIUM
+options.html,option,small,No,timerSize,option_small,MEDIUM
+options.html,option,medium,No,timerSize,option_medium,MEDIUM
+options.html,option,large,No,timerSize,option_large,MEDIUM
+options.html,option,extra large,No,timerSize,option_extraLarge,MEDIUM
+options.html,option,top left,No,timerLocation,option_topLeft,MEDIUM
+options.html,option,top right,No,timerLocation,option_topRight,MEDIUM
+options.html,option,bottom right,No,timerLocation,option_bottomRight,MEDIUM
+options.html,option,bottom left,No,timerLocation,option_bottomLeft,MEDIUM
+options.html,option,hour,No,overrideLimitPeriod,option_hour,HIGH
+options.html,option,day,No,overrideLimitPeriod,option_day,HIGH
+options.html,option,week,No,overrideLimitPeriod,option_week,HIGH
+options.html,legend,Warning Message,No,-,legend_warningMessage,HIGH
+options.html,legend,Temporary Override,No,-,legend_temporaryOverride,HIGH
+options.html,label,Show confirmation message when override is activated,No,overrideConfirm,label_overrideConfirmation,MEDIUM
+options.html,legend,Appearance,No,-,legend_appearance,MEDIUM
+options.html,option,Default,No,theme,option_defaultTheme,MEDIUM
+options.html,option,Light,No,theme,option_light,MEDIUM
+options.html,option,Dark,No,theme,option_dark,MEDIUM
+options.html,option,Spruce,No,theme,option_spruce,MEDIUM
+options.html,legend,Miscellaneous,No,-,legend_miscellaneous,MEDIUM
+options.html,label,Show context menu,No,contextMenu,label_showContextMenu,MEDIUM
+options.html,label,Block all subdomains (not just www),No,matchSubdomains,label_blockAllSubdomains,MEDIUM
+options.html,label,Disable hyperlink to blocked page on blocking/delaying/password page,No,disableLink,label_disableBlockedLink,MEDIUM
+options.html,option,default,No,clockTimeFormat,option_defaultFormat,MEDIUM
+options.html,option,12-hour,No,clockTimeFormat,option_12hour,MEDIUM
+options.html,option,24-hour,No,clockTimeFormat,option_24hour,MEDIUM
+options.html,label,Treat browser windows as always focused,No,allFocused,label_treatWindowsAlwaysFocused,MEDIUM
+options.html,label,Use document focus for counting time on active tab (Android only),No,useDocFocus,label_useDocumentFocus,MEDIUM
+options.html,label,Display access code as image,No,accessCodeImage,label_displayCodeAsImage,MEDIUM
+options.html,label,Use sync storage for options (experimental: use at your own risk!),No,syncStorage,label_useSyncStorage,MEDIUM
+options.html,label,Always allow access to ivBlock website,No,allowLBWebsite,label_allowIvBlockWebsite,MEDIUM
+options.html,label,Diagnostic mode (outputs to browser console),No,diagMode,label_diagnosticMode,MEDIUM
+options.html,legend,Performance,No,-,legend_performance,MEDIUM
+options.html,label,Process only active tabs (improves performance when multiple tabs open),No,processActiveTabs,label_processOnlyActiveTabs,MEDIUM
+options.html,legend,Export / Import,No,-,legend_exportImport,HIGH
+options.html,button,Export Options to Text File,No,exportOptions,button_exportOptionsText,HIGH
+options.html,button,Import Options from Text File,No,importOptions,button_importOptionsText,HIGH
+options.html,button,Export Options to JSON File,No,exportOptionsJSON,button_exportOptionsJson,MEDIUM
+options.html,label,Include passwords in exported options,No,exportPasswords,label_includePasswords,MEDIUM
+options.html,button,Export Options to Sync Storage,No,exportOptionsSync,button_exportOptionsSync,MEDIUM
+options.html,button,Import Options from Sync Storage,No,importOptionsSync,button_importOptionsSync,MEDIUM
+options.html,label,Automatically export options to sync storage (as backup) whenever options are saved,No,autoExportSync,label_autoExportSync,MEDIUM
+options.html,button,Save Options,No,saveOptions,button_saveOptions,HIGH
+options.html,button,Save Options & Close,No,saveOptionsClose,button_saveOptionsClose,HIGH
+options.html,button,Open Diagnostics Page,No,openDiagnostics,button_openDiagnosticsPage,MEDIUM
+options.html,alert,Error: Unable to retrieve options from browser storage.,No,-,alert_retrieveError,HIGH
+options.html,alert,Please enter the time periods in the correct format...,No,-,alert_badTimeFormat,HIGH
+options.html,alert,Please enter the time limit in the correct format...,No,-,alert_badTimeLimit,HIGH
+options.html,alert,Please enter the number of seconds in the correct format...,No,-,alert_badSeconds,HIGH
+options.html,alert,Please enter the number of minutes in the correct format...,No,-,alert_badMinutes,HIGH
+options.html,alert,Please enter the number of hours in the correct format...,No,-,alert_badHours,HIGH
+options.html,alert,Please select a file containing the options to import.,No,-,alert_noImportFile,HIGH
+options.html,alert,Error: Unable to import options from file.,No,-,alert_importError,HIGH
+options.html,alert,The options have been imported successfully.,No,-,alert_importSuccess,HIGH
+options.html,alert,Error: Unable to download exported options.,No,-,alert_exportError,HIGH
+options.html,alert,The options have been exported successfully.,No,-,alert_exportSuccess,HIGH
+options.html,alert,The active lockdown has been canceled.,No,-,alert_lockdownCanceled,HIGH
+options.html,prompt,Enter the password for access to options:,No,-,prompt_optionsPassword,HIGH
+options.html,prompt,Enter the following code for access to options:,No,-,prompt_optionsAccessCode,HIGH
+add-sites.html,page title,ivBlock Add Sites,No,-,pageTitle_addSites,HIGH
+add-sites.html,legend,ivBlock Add Sites,No,-,legend_addSites,HIGH
+add-sites.html,label,Enter the domain names of the sites to block (one item per line):,No,-,label_enterDomainNames,MEDIUM
+add-sites.html,placeholder,somesite.com,No,sites,placeholder_domainName,MEDIUM
+add-sites.html,label,Add these sites to:,No,-,label_addSitesTo,MEDIUM
+add-sites.html,note,Note: Any exceptions in the list of sites will be ignored!,Yes,-,note_exceptionsIgnored,HIGH
+add-sites.html,button,Add Sites,No,addSites,button_addSites,HIGH
+add-sites.html,button,Cancel,No,cancel,button_cancel,HIGH
+add-sites.html,alert,Error: Unable to retrieve options from browser storage.,No,-,alert_retrieveError,HIGH
+lockdown.html,page title,ivBlock Lockdown,No,-,pageTitle_lockdown,HIGH
+lockdown.html,legend,ivBlock Lockdown,No,-,legend_lockdown,HIGH
+lockdown.html,label,Enter the duration of the lockdown:,No,-,label_lockdownDuration,HIGH
+lockdown.html,label,hour(s),No,-,label_hoursSuffix,HIGH
+lockdown.html,label,minute(s),No,-,label_minutesSuffix,HIGH
+lockdown.html,label,Select the sites to block during the lockdown:,No,-,label_selectSitesLockdown,HIGH
+lockdown.html,label,Sites specified in Block Set 1,No,blockSetLabel1,blockSetLabelDynamic_1,HIGH
+lockdown.html,button,Activate Lockdown,No,activate,button_activateLockdown,HIGH
+lockdown.html,button,Cancel,No,cancel,button_cancel,HIGH
+lockdown.html,alert,Error: Unable to retrieve options from browser storage.,No,-,alert_retrieveError,HIGH
+lockdown.html,alert,Please enter a non-zero duration for the lockdown.,No,-,alert_nonZeroDuration,HIGH
+lockdown.html,alert,Please select the sites to lockdown.,No,-,alert_selectSitesLockdown,HIGH
+override.html,page title,ivBlock Override,No,-,pageTitle_override,HIGH
+override.html,legend,ivBlock Override,No,-,legend_override,HIGH
+override.html,label,Allow blocking to be suspended for,No,-,label_allowSuspension,HIGH
+override.html,label,minute(s),No,-,label_minutesSuffix,HIGH
+override.html,button,Activate Override,No,activate,button_activateOverride,HIGH
+override.html,button,Cancel,No,cancel,button_cancel,HIGH
+override.html,alert,Error: Unable to retrieve options from browser storage.,No,-,alert_retrieveError,HIGH
+override.html,alert,You have reached your limit of,No,-,alert_limitReached,HIGH
+override.html,alert,override(s),No,-,alert_overridesPeriod,HIGH
+override.html,alert,Please enter a non-zero duration for the override.,No,-,alert_nonZeroDurationOverride,HIGH
+override.html,alert,Override activated. Blocking will be suspended until,No,-,alert_overrideActivated,HIGH
+override.html,alert,Override will have no effect because you have not selected...,No,-,alert_overrideNoEffect,HIGH
+override.html,alert,Override will be applied to sites in:,No,-,alert_overrideAppliedTo,HIGH
+override.html,prompt,Enter the password to activate override:,No,-,prompt_overridePassword,HIGH
+override.html,prompt,Enter the following code to activate override:,No,-,prompt_overrideAccessCode,HIGH
+stats.html,page title,ivBlock Statistics,No,-,pageTitle_statistics,HIGH
+stats.html,legend,ivBlock Statistics,No,-,legend_statistics,HIGH
+stats.html,label,Start Date/Time:,No,-,label_startDateTime,HIGH
+stats.html,label,Time Spent Since Start:,No,-,label_timeSpentSinceStart,HIGH
+stats.html,label,Time Spent Per Week:,No,-,label_timeSpentPerWeek,HIGH
+stats.html,label,Time Spent Per Day:,No,-,label_timeSpentPerDay,HIGH
+stats.html,label,Time Left in Limit Period:,No,-,label_timeLeftInPeriod,HIGH
+stats.html,label,Rollover Time:,No,-,label_rolloverTime,HIGH
+stats.html,label,Lockdown End Time:,No,-,label_lockdownEndTime,HIGH
+stats.html,button,Restart,No,-,button_restart,HIGH
+stats.html,button,Restart All,No,restartAll,button_restartAll,HIGH
+diagnostics.html,page title,ivBlock Diagnostics,No,-,pageTitle_diagnostics,HIGH
+diagnostics.html,legend,Diagnostics,No,-,legend_diagnostics,HIGH
+diagnostics.html,label,Enter the fully specified URL to test against your current block sets:,No,-,label_diagnosticsUrl,HIGH
+diagnostics.html,placeholder,e.g. https://somesite.com,No,url,placeholder_diagnosticsUrl,MEDIUM
+diagnostics.html,button,Test,No,testURL,button_test,HIGH
+diagnostics.html,tip,Tip: You can copy/paste from your browser's location bar.,No,-,tip_copyFromLocation,MEDIUM
+diagnostics.html,alert,Error: Unable to retrieve options from browser storage.,No,-,alert_retrieveError,HIGH
+diagnostics.html,alert,Please enter the URL in the correct format...,No,-,alert_badUrlFormat,HIGH
