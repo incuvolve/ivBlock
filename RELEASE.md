@@ -53,6 +53,11 @@ prepare releases for TestFlight:
     * push integration branch to github
     * conduct a final test
 * main repository
+    * optional
+      * add latest commit from submodule to development branch and push
+      * create a pull request from development to testing (squash or rebase)
+    * pull testing from remote origin
+    * push changes to remote
     * create a pull request from testing to main in GitHub, create merge commit
     * now main branch points to the correct commit from the submodule
 * Xcode Cloud Workflows
