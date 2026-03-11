@@ -54,7 +54,6 @@
 		867FBC432E1B31640090CAFD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC192E1B31640090CAFD /* style.css */; };
 		867FBC442E1B31640090CAFD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1A2E1B31640090CAFD /* manifest.json */; };
 		867FBC452E1B31640090CAFD /* lockdown.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1B2E1B31640090CAFD /* lockdown.js */; };
-		867FBC462E1B31640090CAFD /* de in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1C2E1B31640090CAFD /* de */; };
 		867FBC472E1B31640090CAFD /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1D2E1B31640090CAFD /* options.html */; };
 		867FBC482E1B31640090CAFD /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1E2E1B31640090CAFD /* common.js */; };
 		867FBC492E1B31640090CAFD /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1F2E1B31640090CAFD /* popup.css */; };
@@ -91,7 +90,6 @@
 		867FBC6D2E1B31640090CAFD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC192E1B31640090CAFD /* style.css */; };
 		867FBC6E2E1B31640090CAFD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1A2E1B31640090CAFD /* manifest.json */; };
 		867FBC6F2E1B31640090CAFD /* lockdown.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1B2E1B31640090CAFD /* lockdown.js */; };
-		867FBC702E1B31640090CAFD /* de in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1C2E1B31640090CAFD /* de */; };
 		867FBC712E1B31640090CAFD /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1D2E1B31640090CAFD /* options.html */; };
 		867FBC722E1B31640090CAFD /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1E2E1B31640090CAFD /* common.js */; };
 		867FBC732E1B31640090CAFD /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 867FBC1F2E1B31640090CAFD /* popup.css */; };
@@ -205,7 +203,6 @@
 		867FBC192E1B31640090CAFD /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = style.css; path = ../../ivBlock/ivBlockCore/style.css; sourceTree = "<group>"; };
 		867FBC1A2E1B31640090CAFD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../ivBlock/ivBlockCore/manifest.json; sourceTree = "<group>"; };
 		867FBC1B2E1B31640090CAFD /* lockdown.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = lockdown.js; path = ../../ivBlock/ivBlockCore/lockdown.js; sourceTree = "<group>"; };
-		867FBC1C2E1B31640090CAFD /* de */ = {isa = PBXFileReference; lastKnownFileType = folder; name = de; path = ../../ivBlock/ivBlockCore/de; sourceTree = "<group>"; };
 		867FBC1D2E1B31640090CAFD /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../ivBlock/ivBlockCore/options.html; sourceTree = "<group>"; };
 		867FBC1E2E1B31640090CAFD /* common.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = common.js; path = ../../ivBlock/ivBlockCore/common.js; sourceTree = "<group>"; };
 		867FBC1F2E1B31640090CAFD /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../ivBlock/ivBlockCore/popup.css; sourceTree = "<group>"; };
@@ -365,7 +362,6 @@
 				867FBC082E1B31640090CAFD /* content.css */,
 				867FBC212E1B31640090CAFD /* content.js */,
 				86B3A1B42EBE5AE200431451 /* controls.css */,
-				867FBC1C2E1B31640090CAFD /* de */,
 				867FBC012E1B31640090CAFD /* delayed.html */,
 				867FBC162E1B31640090CAFD /* diagnostics.html */,
 				867FBC022E1B31640090CAFD /* diagnostics.js */,
@@ -573,7 +569,6 @@
 				867FBC632E1B31640090CAFD /* options.js in Resources */,
 				86B3A1B82EBE5AE200431451 /* controls.css in Resources */,
 				86B3A1B92EBE5AE200431451 /* override.css in Resources */,
-				867FBC702E1B31640090CAFD /* de in Resources */,
 				867FBC692E1B31640090CAFD /* override.html in Resources */,
 				867FBC7C2E1B31640090CAFD /* stats.js in Resources */,
 				867FBC722E1B31640090CAFD /* common.js in Resources */,
@@ -622,7 +617,6 @@
 				867FBC392E1B31640090CAFD /* options.js in Resources */,
 				86B3A1B62EBE5AE200431451 /* controls.css in Resources */,
 				86B3A1B72EBE5AE200431451 /* override.css in Resources */,
-				867FBC462E1B31640090CAFD /* de in Resources */,
 				867FBC3F2E1B31640090CAFD /* override.html in Resources */,
 				867FBC522E1B31640090CAFD /* stats.js in Resources */,
 				867FBC482E1B31640090CAFD /* common.js in Resources */,
