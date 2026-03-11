@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+</head>
+<body class="no-js">
+    <div class="js-only">
+        <img src="../Icon.png" width="128" height="128" alt="ivBlock Icon">
+        <p id="msg-ios" class="platform-ios">Du kannst die Safari-Erweiterung von ivBlock in den Einstellungen aktivieren.</p>
+        <p id="msg-mac-unknown" class="platform-mac state-unknown">Du kannst die ivBlock-Erweiterung in den Einstellungen für Safari-Erweiterungen aktivieren.</p>
+        <p id="msg-mac-on" class="platform-mac state-on">Die ivBlock-Erweiterung ist derzeit aktiv. Du kannst sie in den Einstellungen für Safari-Erweiterungen deaktivieren.</p>
+        <p id="msg-mac-off" class="platform-mac state-off">Die ivBlock-Erweiterung ist derzeit inaktiv. Du kannst sie in den Einstellungen für Safari-Erweiterungen aktivieren.</p>
+        <button id="btn-open-prefs" class="platform-mac open-preferences">Beenden und Einstellungen für Safari-Erweiterungen öffnen …</button>
+        <!-- macOS 13+ Einstellungs-Varianten — von Script.js gelesen, nicht direkt angezeigt -->
+        <span id="str-mac-unknown-settings" hidden>Du kannst die ivBlock-Erweiterung im Bereich „Erweiterungen“ der Safari-Einstellungen aktivieren.</span>
+        <span id="str-mac-on-settings" hidden>Die ivBlock-Erweiterung ist derzeit aktiv. Du kannst sie im Bereich „Erweiterungen“ der Safari-Einstellungen deaktivieren.</span>
+        <span id="str-mac-off-settings" hidden>Die ivBlock-Erweiterung ist derzeit inaktiv. Du kannst sie im Bereich „Erweiterungen“ der Safari-Einstellungen aktivieren.</span>
+        <span id="str-open-settings" hidden>Beenden und Safari-Einstellungen öffnen …</span>
+    </div>
+    <noscript>
+        <p>JavaScript ist erforderlich, um diese App zu nutzen.</p>
+    </noscript>
+</body>
+</html>
