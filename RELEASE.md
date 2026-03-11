@@ -83,13 +83,9 @@ prepare releases for TestFlight:
     * git push origin tag v1.0.2
 * GitHub
     * create release in GitHub pointing to release tag
-    * create pull request to testing to update the origin testing branch
+    * name in Github: Version 1.0.1 (if git tag is v1.0.1)
 * checkout testing and merge main
 * checkout development and merge testing
-    * create release tag for commit of release build in GitHub
-      * git tag: v1.0.1
-      * label in GitHub: Version 1.0.1
-    * create release in GitHub
 
 ## update local main and development branch
 
