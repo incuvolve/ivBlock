@@ -32,6 +32,9 @@ Description of the ivBlock release workflow.
     * update development branch with commits from main and testing
     * work on development branch
     * as soon as modifications in ivBlockCore are made, push changes to ivBlock repository as well (references to submodule to most recent commit)
+* Quality
+  * conduct code review
+  * check if all new features are properly localized
 
 ## first testing phase
 
