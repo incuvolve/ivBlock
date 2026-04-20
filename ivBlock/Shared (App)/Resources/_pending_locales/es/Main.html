@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+</head>
+<body class="no-js">
+    <div class="js-only">
+        <img src="../Icon.png" width="128" height="128" alt="ivBlock Icon">
+        <p id="msg-ios" class="platform-ios">Puedes activar la extensión de Safari de ivBlock en Ajustes.</p>
+        <p id="msg-mac-unknown" class="platform-mac state-unknown">Puedes activar la extensión de ivBlock en las preferencias de extensiones de Safari.</p>
+        <p id="msg-mac-on" class="platform-mac state-on">La extensión de ivBlock está activada. Puedes desactivarla en las preferencias de extensiones de Safari.</p>
+        <p id="msg-mac-off" class="platform-mac state-off">La extensión de ivBlock está desactivada. Puedes activarla en las preferencias de extensiones de Safari.</p>
+        <button id="btn-open-prefs" class="platform-mac open-preferences">Salir y abrir preferencias de extensiones de Safari…</button>
+        <!-- macOS 13+ Settings variants — read by Script.js, not displayed directly -->
+        <span id="str-mac-unknown-settings" hidden>Puedes activar la extensión de ivBlock en la sección Extensiones de los ajustes de Safari.</span>
+        <span id="str-mac-on-settings" hidden>La extensión de ivBlock está activada. Puedes desactivarla en la sección Extensiones de los ajustes de Safari.</span>
+        <span id="str-mac-off-settings" hidden>La extensión de ivBlock está desactivada. Puedes activarla en la sección Extensiones de los ajustes de Safari.</span>
+        <span id="str-open-settings" hidden>Salir y abrir ajustes de Safari…</span>
+    </div>
+    <noscript>
+        <p>Se necesita JavaScript para usar esta aplicación.</p>
+    </noscript>
+</body>
+</html>
