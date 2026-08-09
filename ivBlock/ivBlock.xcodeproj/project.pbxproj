@@ -159,13 +159,6 @@
 		863FC9792ECD2BD30017989D /* buttons.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = buttons.css; path = ivBlockCore/buttons.css; sourceTree = SOURCE_ROOT; };
 		867FBBA62E1B31620090CAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		867FBBA6DE000000000000DE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/Main.html; sourceTree = "<group>"; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 6893d4b (Release 1.1.0 (#91))
-=======
->>>>>>> development
 		867FBBA72E1B31620090CAFD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		867FBBA82E1B31620090CAFD /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		867FBBA92E1B31620090CAFD /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };

@@ -1,8 +1,24 @@
 // Remove no-js class immediately to show content
-document.body.classList.remove('no-js');
+if (document.body) {
+    document.body.classList.remove('no-js');
+} else {
+    // Fallback if body isn't ready yet
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.body) {
+                document.body.classList.remove('no-js');
+            }
+        });
+    }
+}
 
 // Make show function available globally
 window.show = function(platform, enabled, useSettingsInsteadOfPreferences) {
+    // Ensure no-js class is removed
+    if (document.body) {
+        document.body.classList.remove('no-js');
+    }
+    
     document.body.classList.add(`platform-${platform}`);
 
     if (useSettingsInsteadOfPreferences) {
