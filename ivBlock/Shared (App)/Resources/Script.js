@@ -1,6 +1,8 @@
+// Remove no-js class immediately to show content
 document.body.classList.remove('no-js');
 
-function show(platform, enabled, useSettingsInsteadOfPreferences) {
+// Make show function available globally
+window.show = function(platform, enabled, useSettingsInsteadOfPreferences) {
     document.body.classList.add(`platform-${platform}`);
 
     if (useSettingsInsteadOfPreferences) {
@@ -17,10 +19,23 @@ function show(platform, enabled, useSettingsInsteadOfPreferences) {
         document.body.classList.remove(`state-on`);
         document.body.classList.remove(`state-off`);
     }
-}
+};
 
 function openPreferences() {
     webkit.messageHandlers.controller.postMessage("open-preferences");
 }
 
-document.querySelector("button.open-preferences").addEventListener("click", openPreferences);
+// Wait for DOM to be ready before attaching event listener
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.querySelector("button.open-preferences");
+        if (btn) {
+            btn.addEventListener("click", openPreferences);
+        }
+    });
+} else {
+    const btn = document.querySelector("button.open-preferences");
+    if (btn) {
+        btn.addEventListener("click", openPreferences);
+    }
+}

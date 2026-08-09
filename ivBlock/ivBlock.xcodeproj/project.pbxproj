@@ -160,9 +160,12 @@
 		867FBBA62E1B31620090CAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		867FBBA6DE000000000000DE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/Main.html; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 6893d4b (Release 1.1.0 (#91))
+=======
+>>>>>>> development
 		867FBBA72E1B31620090CAFD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		867FBBA82E1B31620090CAFD /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		867FBBA92E1B31620090CAFD /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
@@ -884,11 +887,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -922,11 +921,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -967,11 +962,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1012,11 +1003,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1057,11 +1044,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1096,11 +1079,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1139,11 +1118,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -1184,11 +1159,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.2.0;
-=======
-				MARKETING_VERSION = 1.1.0;
->>>>>>> 6893d4b (Release 1.1.0 (#91))
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
