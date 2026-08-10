@@ -26,25 +26,29 @@ Description of the ivBlock release workflow.
     * merge changes from master into integration locally
     * either create new development branch from integration, or if it
       has been created before, merge changes from integration to the dev
-      branch. Naming convention: dev-1.0.2
+      branch. Naming convention: dev-1.0.2 (in the core module)
     * push new dev branch to github
-* ivBlock
+* ivBlock main project
     * update development branch with commits from main and testing
     * work on development branch
     * as soon as modifications in ivBlockCore are made, push changes to ivBlock repository as well (references to submodule to most recent commit)
 * Quality
   * conduct code review
   * check if all new features are properly localized
+* Publish changes 
+    * push development branch to remote
 
 ## first testing phase
 
 prepare releases for TestFlight:
 
 * ivBlock project
-    * create a pull request from development to testing in GitHub, rebase and merge
+    * main and testing branch from main project are protected.
+    * create a pull request from development to testing in GitHub
+      * squash or rebase
     * submodule from development branch should point to the correct submodule commit (dev-1.0.2 for example)
 * Xcode Cloud workflows
-    * testing workflows build latest code from main branch and
+    * testing workflows build latest code from main branch automatically and
       distribute the update on Testflight for iOS and MacOS
 
 
@@ -59,8 +63,6 @@ prepare releases for TestFlight:
     * optional
       * add latest commit from submodule to development branch and push
       * create a pull request from development to testing (squash or rebase)
-    * pull testing from remote origin
-    * push changes to remote
     * create a pull request from testing to main in GitHub, create merge commit
     * now main branch points to the correct commit from the submodule
 * Xcode Cloud Workflows
@@ -79,7 +81,7 @@ prepare releases for TestFlight:
 
 * Update website
 
-* pull main to local repo
+* pull main branch from origin to local repo
 * tag the release, e.g.
     * git tag v⒈0.2
 * push the tag
@@ -87,9 +89,4 @@ prepare releases for TestFlight:
 * GitHub
     * create release in GitHub pointing to release tag
     * name in Github: Version 1.0.1 (if git tag is v1.0.1)
-* checkout testing and merge main
-* checkout development and merge testing
-
-## update local main and development branch
-
-* main branch checkout, pull changes and update submodules
+* checkout development and merge from main
