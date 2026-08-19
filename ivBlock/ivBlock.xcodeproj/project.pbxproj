@@ -111,6 +111,14 @@
 		86B3A1B92EBE5AE200431451 /* override.css in Resources */ = {isa = PBXBuildFile; fileRef = 86B3A1B52EBE5AE200431451 /* override.css */; };
 		86C04B022F5E0D7C00092388 /* stats.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C04B012F5E0D7C00092388 /* stats.css */; };
 		86C04B032F5E0D7C00092388 /* stats.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C04B012F5E0D7C00092388 /* stats.css */; };
+		86C72E233035CFA700C8503B /* jquery-ui-theme-spruce.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E223035CFA700C8503B /* jquery-ui-theme-spruce.css */; };
+		86C72E243035CFA700C8503B /* jquery-ui-theme-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E203035CFA700C8503B /* jquery-ui-theme-dark.css */; };
+		86C72E253035CFA700C8503B /* jquery-ui-theme-light.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E213035CFA700C8503B /* jquery-ui-theme-light.css */; };
+		86C72E263035CFA700C8503B /* jquery-ui-overrides.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E1F3035CFA700C8503B /* jquery-ui-overrides.css */; };
+		86C72E273035CFA700C8503B /* jquery-ui-theme-spruce.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E223035CFA700C8503B /* jquery-ui-theme-spruce.css */; };
+		86C72E283035CFA700C8503B /* jquery-ui-theme-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E203035CFA700C8503B /* jquery-ui-theme-dark.css */; };
+		86C72E293035CFA700C8503B /* jquery-ui-theme-light.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E213035CFA700C8503B /* jquery-ui-theme-light.css */; };
+		86C72E2A3035CFA700C8503B /* jquery-ui-overrides.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C72E1F3035CFA700C8503B /* jquery-ui-overrides.css */; };
 		86D246CD2EEB298800A96161 /* lockdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 86D246CC2EEB298800A96161 /* lockdown.css */; };
 		86D246CE2EEB298800A96161 /* lockdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 86D246CC2EEB298800A96161 /* lockdown.css */; };
 /* End PBXBuildFile section */
@@ -223,6 +231,10 @@
 		86B3A1B42EBE5AE200431451 /* controls.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = controls.css; path = ivBlockCore/controls.css; sourceTree = SOURCE_ROOT; };
 		86B3A1B52EBE5AE200431451 /* override.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = override.css; path = ivBlockCore/override.css; sourceTree = SOURCE_ROOT; };
 		86C04B012F5E0D7C00092388 /* stats.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = stats.css; path = ivBlockCore/stats.css; sourceTree = SOURCE_ROOT; };
+		86C72E1F3035CFA700C8503B /* jquery-ui-overrides.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "jquery-ui-overrides.css"; path = "ivBlockCore/jquery-ui-overrides.css"; sourceTree = SOURCE_ROOT; };
+		86C72E203035CFA700C8503B /* jquery-ui-theme-dark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "jquery-ui-theme-dark.css"; path = "ivBlockCore/jquery-ui-theme-dark.css"; sourceTree = SOURCE_ROOT; };
+		86C72E213035CFA700C8503B /* jquery-ui-theme-light.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "jquery-ui-theme-light.css"; path = "ivBlockCore/jquery-ui-theme-light.css"; sourceTree = SOURCE_ROOT; };
+		86C72E223035CFA700C8503B /* jquery-ui-theme-spruce.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "jquery-ui-theme-spruce.css"; path = "ivBlockCore/jquery-ui-theme-spruce.css"; sourceTree = SOURCE_ROOT; };
 		86D246CC2EEB298800A96161 /* lockdown.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = lockdown.css; path = ivBlockCore/lockdown.css; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -355,7 +367,10 @@
 		867FBC002E1B31640090CAFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				868265C030335158007320C3 /* components.css */,
+				86C72E1F3035CFA700C8503B /* jquery-ui-overrides.css */,
+				86C72E203035CFA700C8503B /* jquery-ui-theme-dark.css */,
+				86C72E213035CFA700C8503B /* jquery-ui-theme-light.css */,
+				86C72E223035CFA700C8503B /* jquery-ui-theme-spruce.css */,
 				867FBC202E1B31640090CAFD /* _locales */,
 				867FBC132E1B31640090CAFD /* add-sites.html */,
 				867FBC072E1B31640090CAFD /* add-sites.js */,
@@ -364,6 +379,7 @@
 				867FBC112E1B31640090CAFD /* blocked.js */,
 				863FC9792ECD2BD30017989D /* buttons.css */,
 				867FBC1E2E1B31640090CAFD /* common.js */,
+				868265C030335158007320C3 /* components.css */,
 				867FBC082E1B31640090CAFD /* content.css */,
 				867FBC212E1B31640090CAFD /* content.js */,
 				86B3A1B42EBE5AE200431451 /* controls.css */,
@@ -595,6 +611,10 @@
 				867FBC6B2E1B31640090CAFD /* override.js in Resources */,
 				867FBC6E2E1B31640090CAFD /* manifest.json in Resources */,
 				867FBC5D2E1B31640090CAFD /* LICENSE in Resources */,
+				86C72E233035CFA700C8503B /* jquery-ui-theme-spruce.css in Resources */,
+				86C72E243035CFA700C8503B /* jquery-ui-theme-dark.css in Resources */,
+				86C72E253035CFA700C8503B /* jquery-ui-theme-light.css in Resources */,
+				86C72E263035CFA700C8503B /* jquery-ui-overrides.css in Resources */,
 				867FBC602E1B31640090CAFD /* lockdown.html in Resources */,
 				867FBC592E1B31640090CAFD /* stats.html in Resources */,
 				867FBC7B2E1B31640090CAFD /* options.css in Resources */,
@@ -644,6 +664,10 @@
 				867FBC412E1B31640090CAFD /* override.js in Resources */,
 				867FBC442E1B31640090CAFD /* manifest.json in Resources */,
 				867FBC332E1B31640090CAFD /* LICENSE in Resources */,
+				86C72E273035CFA700C8503B /* jquery-ui-theme-spruce.css in Resources */,
+				86C72E283035CFA700C8503B /* jquery-ui-theme-dark.css in Resources */,
+				86C72E293035CFA700C8503B /* jquery-ui-theme-light.css in Resources */,
+				86C72E2A3035CFA700C8503B /* jquery-ui-overrides.css in Resources */,
 				867FBC362E1B31640090CAFD /* lockdown.html in Resources */,
 				867FBC2F2E1B31640090CAFD /* stats.html in Resources */,
 				867FBC512E1B31640090CAFD /* options.css in Resources */,
