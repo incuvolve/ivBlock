@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86097C5F303AF26E0098F28D /* VERSIONS-ivBlock.md in Resources */ = {isa = PBXBuildFile; fileRef = 86097C5E303AF26E0098F28D /* VERSIONS-ivBlock.md */; };
+		86097C60303AF26E0098F28D /* VERSIONS-ivBlock.md in Resources */ = {isa = PBXBuildFile; fileRef = 86097C5E303AF26E0098F28D /* VERSIONS-ivBlock.md */; };
 		863FC97A2ECD2BD30017989D /* buttons.css in Resources */ = {isa = PBXBuildFile; fileRef = 863FC9792ECD2BD30017989D /* buttons.css */; };
 		863FC97B2ECD2BD30017989D /* buttons.css in Resources */ = {isa = PBXBuildFile; fileRef = 863FC9792ECD2BD30017989D /* buttons.css */; };
 		867FBBB62E1B31630090CAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FBBB52E1B31630090CAFD /* AppDelegate.swift */; };
@@ -166,6 +168,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		86097C5E303AF26E0098F28D /* VERSIONS-ivBlock.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "VERSIONS-ivBlock.md"; path = "ivBlockCore/VERSIONS-ivBlock.md"; sourceTree = SOURCE_ROOT; };
 		863FC9792ECD2BD30017989D /* buttons.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = buttons.css; path = ivBlockCore/buttons.css; sourceTree = SOURCE_ROOT; };
 		867FBBA62E1B31620090CAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		867FBBA6DE000000000000DE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/Main.html; sourceTree = "<group>"; };
@@ -367,6 +370,7 @@
 		867FBC002E1B31640090CAFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				86097C5E303AF26E0098F28D /* VERSIONS-ivBlock.md */,
 				86C72E1F3035CFA700C8503B /* jquery-ui-overrides.css */,
 				86C72E203035CFA700C8503B /* jquery-ui-theme-dark.css */,
 				86C72E213035CFA700C8503B /* jquery-ui-theme-light.css */,
@@ -585,6 +589,7 @@
 				867FBC5F2E1B31640090CAFD /* images in Resources */,
 				867FBC682E1B31640090CAFD /* README.md in Resources */,
 				86D246CD2EEB298800A96161 /* lockdown.css in Resources */,
+				86097C5F303AF26E0098F28D /* VERSIONS-ivBlock.md in Resources */,
 				867FBC6F2E1B31640090CAFD /* lockdown.js in Resources */,
 				868265C330335158007320C3 /* components.css in Resources */,
 				867FBC5A2E1B31640090CAFD /* popup.js in Resources */,
@@ -638,6 +643,7 @@
 				867FBC352E1B31640090CAFD /* images in Resources */,
 				867FBC3E2E1B31640090CAFD /* README.md in Resources */,
 				86D246CE2EEB298800A96161 /* lockdown.css in Resources */,
+				86097C60303AF26E0098F28D /* VERSIONS-ivBlock.md in Resources */,
 				867FBC452E1B31640090CAFD /* lockdown.js in Resources */,
 				868265C530335158007320C3 /* components.css in Resources */,
 				867FBC302E1B31640090CAFD /* popup.js in Resources */,
