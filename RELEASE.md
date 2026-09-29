@@ -4,89 +4,88 @@ Description of the ivBlock release workflow.
 
 ## Starting development of new version
 
-* merge recent changes on main back to testing and development branches
-* increment version number 
-    * manifest.json in ivBlockCore
-    * in every subproject in Xcode in the target sections
-        * iOS App
-        * iOS Extension
-        * Mac App
-        * Mac Extension
-* semantic versioning
-    * 1.0.0 -> 2.0.0 for major changes
-    * 1.0.0 -> 1.1.0 for minor changes
-    * 1.0.0 -> 1.0.1 for patches
+- merge recent changes on main back to testing and development branches
+- increment version number
+  - manifest.json in ivBlockCore
+  - in every subproject in Xcode in the target sections
+    - iOS App
+    - iOS Extension
+    - Mac App
+    - Mac Extension
+- semantic versioning
+  - 1.0.0 -> 2.0.0 for major changes
+  - 1.0.0 -> 1.1.0 for minor changes
+  - 1.0.0 -> 1.0.1 for patches
 
 ## development phase
 
-* ivBlockCore (submodule) = forked LeechBlockNG repository
-    * in case there are upstream changes, sync the master branch in
-      GitHub
-    * pull changes on master branch
-    * merge changes from master into integration locally
-    * either create new development branch from integration, or if it
-      has been created before, merge changes from integration to the dev
-      branch. Naming convention: dev-1.0.2 (in the core module)
-    * push new dev branch to github
-* ivBlock main project
-    * update development branch with commits from main and testing
-    * work on development branch
-    * as soon as modifications in ivBlockCore are made, push changes to ivBlock repository as well (references to submodule to most recent commit)
-* Quality
-  * conduct code review
-  * check if all new features are properly localized
-* Publish changes 
-    * push development branch to remote
+- ivBlockCore (submodule) = forked LeechBlockNG repository
+  - in case there are upstream changes, sync the master branch in
+    GitHub
+  - pull changes on master branch
+  - merge changes from master into integration locally
+  - either create new development branch from integration, or if it
+    has been created before, merge changes from integration to the dev
+    branch. Naming convention: dev-1.0.2 (in the core module)
+  - update npm, run tests
+  - push new dev branch to github
+- ivBlock main project
+  - update development branch with commits from main and testing
+  - work on development branch
+  - as soon as modifications in ivBlockCore are made, push changes to ivBlock repository as well (references to submodule to most recent commit)
+- Quality
+  - conduct code review
+  - check if all new features are properly localized
+- Publish changes
+  - push development branch to remote
 
 ## first testing phase
 
 prepare releases for TestFlight:
 
-* ivBlock project
-    * main and testing branch from main project are protected.
-    * create a pull request from development to testing in GitHub
-      * squash or rebase
-    * submodule from development branch should point to the correct submodule commit (dev-1.0.2 for example)
-* Xcode Cloud workflows
-    * testing workflows build latest code from main branch automatically and
-      distribute the update on Testflight for iOS and MacOS
-
+- ivBlock project
+  - main and testing branch from main project are protected.
+  - create a pull request from development to testing in GitHub
+    - squash or rebase
+  - submodule from development branch should point to the correct submodule commit (dev-1.0.2 for example)
+- Xcode Cloud workflows
+  - testing workflows build latest code from main branch automatically and
+    distribute the update on Testflight for iOS and MacOS
 
 ## prepare releases for distribution in App Store Connect
 
-* Core Module
-    * merge development branch of submodule into integration branch
-    * update Version-ivBlock.md in integration branch
-    * push integration branch to github
-    * conduct a final test
-* main repository
-    * optional
-      * add latest commit from submodule to development branch and push
-      * create a pull request from development to testing (squash or rebase)
-    * create a pull request from testing to main in GitHub, create merge commit
-    * now main branch points to the correct commit from the submodule
-* Xcode Cloud Workflows
-    * manually trigger the Release Candidate workflows for iOS / MacOS
-* AppStore Connect
-    * create new versions with correct version number for iOS and MacOS
-      version
-    * add description for changes in German and English
-    * add screenshots
-    * add promotional text
-    * assign release build to app version for distribution
-* Submit app for review
-
+- Core Module
+  - merge development branch of submodule into integration branch
+  - update Version-ivBlock.md in integration branch
+  - push integration branch to github
+  - conduct a final test
+- main repository
+  - optional
+    - add latest commit from submodule to development branch and push
+    - create a pull request from development to testing (squash or rebase)
+  - create a pull request from testing to main in GitHub, create merge commit
+  - now main branch points to the correct commit from the submodule
+- Xcode Cloud Workflows
+  - manually trigger the Release Candidate workflows for iOS / MacOS
+- AppStore Connect
+  - create new versions with correct version number for iOS and MacOS
+    version
+  - add description for changes in German and English
+  - add screenshots
+  - add promotional text
+  - assign release build to app version for distribution
+- Submit app for review
 
 ## Postprocessing
 
-* Update website
+- Update website
 
-* pull main branch from origin to local repo
-* tag the release, e.g.
-    * git tag v⒈0.2
-* push the tag
-    * git push origin tag v1.0.2
-* GitHub
-    * create release in GitHub pointing to release tag
-    * name in Github: Version 1.0.1 (if git tag is v1.0.1)
-* checkout development and merge from main
+- pull main branch from origin to local repo
+- tag the release, e.g.
+  - git tag v⒈0.2
+- push the tag
+  - git push origin tag v1.0.2
+- GitHub
+  - create release in GitHub pointing to release tag
+  - name in Github: Version 1.0.1 (if git tag is v1.0.1)
+- checkout development and merge from main
