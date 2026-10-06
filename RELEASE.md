@@ -1,10 +1,40 @@
 # ivBlock Release Workflows
 
-Description of the ivBlock release workflow.
+Description of the ivBlock development and release workflow.
+
+## Branches
+
+| Branch                  | Purpose                                                       | Protected | Merge method into it                          |
+| ----------------------- | ------------------------------------------------------------- | --------- | --------------------------------------------- |
+| `main`                  | Released code. Release builds are created manually from here. | Yes       | Merge commit (from `testing`)                 |
+| `testing`               | QA / user acceptance. Automatically built and deployed.       | Yes       | Squash (from `development`)                   |
+| `development`           | Integration branch for ongoing work.                          | No        | Squash (from feature branches) or direct push |
+| `feature/*`, `hotfix/*` | Short-lived working branches.                                 | No        | n/a                                           |
+
+## Keeping local branches in sync
+
+`main` and `testing` are mirrors of the remote. Never commit or merge locally on them; only fast-forward:
+
+```bash
+git fetch origin
+git checkout main    && git merge --ff-only origin/main
+git checkout testing && git merge --ff-only origin/testing
+```
+
+Squash merges give `testing` new commits with different SHAs than your `development` commits, so `development` must be realigned after each squash PR.
 
 ## Starting development of new version
 
-- merge recent changes on main back to testing and development branches
+### Versioning
+
+- use semantic versioning
+  - 1.0.0 -> 2.0.0 for major changes
+  - 1.0.0 -> 1.1.0 for minor changes
+  - 1.0.0 -> 1.0.1 for patches
+
+### Development Workflow
+
+- start from updated development branch
 - increment version number
   - manifest.json in ivBlockCore
   - in every subproject in Xcode in the target sections
@@ -12,27 +42,68 @@ Description of the ivBlock release workflow.
     - iOS Extension
     - Mac App
     - Mac Extension
-- semantic versioning
-  - 1.0.0 -> 2.0.0 for major changes
-  - 1.0.0 -> 1.1.0 for minor changes
-  - 1.0.0 -> 1.0.1 for patches
 
-## development phase
+#### ivBlockCore submodule = forked LeechBlock NG repository
 
-- ivBlockCore (submodule) = forked LeechBlockNG repository
-  - in case there are upstream changes, sync the master branch in
-    GitHub
-  - pull changes on master branch
-  - merge changes from master into integration locally
-  - either create new development branch from integration, or if it
-    has been created before, merge changes from integration to the dev
-    branch. Naming convention: dev-1.0.2 (in the core module)
-  - update npm, run tests
-  - push new dev branch to github
-- ivBlock main project
-  - update development branch with commits from main and testing
-  - work on development branch
-  - as soon as modifications in ivBlockCore are made, push changes to ivBlock repository as well (references to submodule to most recent commit)
+- in case there are upstream changes, sync the master branch in
+  GitHub
+- pull changes on master branch of the submodule
+- merge changes from master into integration locally
+
+```
+git checkout master && git pull origin master
+git checkout integration
+git merge master
+```
+
+- either create new development branch from integration, or if it
+  has been created before, merge changes from integration to the dev
+  branch. Naming convention: dev-1.0.2 (in the core module)
+- update npm, run tests
+
+```
+git checkout -b dev-1.3.x
+npm update
+npm run test
+```
+
+- push new dev branch to github
+
+```
+git push origin dev-1.3.x
+```
+
+#### ivBlock main project
+
+**If `development` has no new work:**
+
+```bash
+git checkout development
+git log origin/testing..development     # only your old pre-squash commits expected
+git diff origin/testing development     # must be empty, otherwise stop: work would be lost
+git reset --hard origin/testing
+git push --force-with-lease origin development
+```
+
+**If `development` already has new commits on top of the squashed ones:**
+
+```bash
+git rebase --onto origin/testing <old-development-tip-before-new-work> development
+git push --force-with-lease origin development
+```
+
+Use `--force-with-lease` only on `development`, never on `main` or `testing`. If anyone else works on `development`, tell them to reset as well.
+
+Recommended git settings:
+
+```bash
+git config --global pull.ff only
+git config --global fetch.prune true
+```
+
+- update development branch with commits from main and testing
+- work on development branch
+- as soon as modifications in ivBlockCore are made, push changes to ivBlock repository as well (references to submodule to most recent commit)
 - Quality
   - conduct code review
   - check if all new features are properly localized
